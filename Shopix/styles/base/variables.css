@@ -1,0 +1,28 @@
+:root {
+  --body-bg: #f0f0f0;
+  --color-warning: #FED700;
+  --color-light: #888888;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-red: #ff0000;
+  --color-black-3: #333;
+  --color-light-1: #c0c0c0;
+
+  --body-font: "Open Sans", sans-serif;
+  --heading-font: "Montserrat", sans-serif;
+
+
+  --transition-300ms: all 300ms ease;
+  --transition-400ms: all 400ms ease;
+  --transition-500ms: all 500ms ease;
+  --transition-600ms: all 600ms ease;
+  --transition-700ms: all 700ms ease;
+  --transition-800ms: all 800ms ease;
+  --transition-900ms: all 900ms ease;
+  --transition-1000ms: all 1000ms ease;
+  --transition-1100ms: all 1100ms ease;
+
+  --box-shadow-light: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  --box-shadow-mid: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  --box-shadow-strong: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px
+}

@@ -1,0 +1,233 @@
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100dvh;
+  background: #fff;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transition: opacity 0.6s ease, visibility 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  transform: scale(1);
+}
+.loading-screen.active {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: scale(1.02);
+}
+
+.shopix-loader {
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2.5rem;
+  animation: loader-enter 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.shopix-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.shopix-logo-icon {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  border-radius: 1rem;
+  background: #fffbea;
+  border: 1px solid #fff0a8;
+  box-shadow: 0 0.8rem 2rem rgba(250, 204, 21, 0.12);
+}
+.shopix-logo-icon span {
+  width: 0.4rem;
+  border-radius: 1rem;
+  background: #facc15;
+  animation: logo-bars 1.2s ease-in-out infinite;
+}
+.shopix-logo-icon span:nth-child(1) {
+  height: 1.2rem;
+}
+.shopix-logo-icon span:nth-child(2) {
+  height: 1.9rem;
+  animation-delay: 0.15s;
+}
+.shopix-logo-icon span:nth-child(3) {
+  height: 1.5rem;
+  animation-delay: 0.3s;
+}
+.shopix-logo-name {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+.shopix-logo-name strong {
+  color: #171717;
+  font-family: var(--heading-font);
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.07em;
+}
+.shopix-logo-name small {
+  color: #eab308;
+  font-size: 0.55rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+}
+
+.shopix-skeleton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  border: 1px solid #f0f0f0;
+  border-radius: 1.2rem;
+  background: #fff;
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+.skeleton-image {
+  flex: 0 0 8rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 0.9rem;
+  background: linear-gradient(90deg,#f3f3f3 25%,#fafafa 50%,#f3f3f3 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
+
+
+.skeleton-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+.skeleton-line {
+  display: block;
+  width: 85%;
+  height: 0.7rem;
+  border-radius: 1rem;
+  background: linear-gradient( 90deg,#f3f3f3 25%,#fafafa 50%,#f3f3f3 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+.skeleton-line.large {
+  width: 100%;
+  height: 1rem;
+}
+.skeleton-line.small {
+  width: 55%;
+}
+.skeleton-button {
+  width: 6rem;
+  height: 1.8rem;
+  margin-top: 0.4rem;
+  border-radius: 0.5rem;
+  background:linear-gradient( 90deg,#facc15 25%,#fde68a 50%,#facc15 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+.shopix-loading {
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.7rem;
+}
+.shopix-loading span {
+  color: #999;
+  font-family: var(--body-font);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+}
+.loading-bar {
+  position: relative;
+  width: 100%;
+  height: 0.35rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: #f5f1d8;
+}
+.loading-bar i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  height: 100%;
+  border-radius: inherit;
+  background: #facc15;
+  box-shadow: 0 0 0.8rem rgba(250, 204, 21, 0.35);
+  animation: loading-progress 1.4s ease-in-out infinite;
+}
+@keyframes loader-enter {
+  from {
+    opacity: 0;
+    transform: translateY(0.8rem) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+@keyframes skeleton-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+
+@keyframes logo-bars {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scaleY(0.75);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+
+@keyframes loading-progress {
+  0% {
+    transform: translateX(-130%);
+  }
+  100% {
+    transform: translateX(400%);
+  }
+}
+
+@media screen and (width <= 480px) {
+  .shopix-loader {
+    width: calc(100% - 3rem);
+    gap: 2rem;
+  }
+  .shopix-skeleton {
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .skeleton-image {
+    flex-basis: 6.5rem;
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .shopix-loading {
+    width: 14rem;
+  }
+}

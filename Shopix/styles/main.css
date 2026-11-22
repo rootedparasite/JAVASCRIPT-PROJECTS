@@ -1,0 +1,14 @@
+/* * BASE */
+@import url("./base/variables.css");
+@import url("./base/reset.css");
+@import url("./base/utilities.css");
+
+/* * COMPONENTS */
+@import url("./components/loading.css");
+@import url("./components/header.css");
+@import url("./components/footer.css");
+
+/* * PAGES */
+@import url("./pages/home.css");
+@import url("./components/sidemenu.css");
+
