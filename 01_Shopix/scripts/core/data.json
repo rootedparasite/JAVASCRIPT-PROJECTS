@@ -2,7 +2,6 @@
 [
   {
     "categories": [
-      [
         {
           "id": "value-of-the-day",
           "name": "Value of the Day",
@@ -17,9 +16,8 @@
           "id": "new-arrivals",
           "name": "New Arrivals",
           "haveChilds": false
-        }
-      ],
-      {
+        },
+        {
         "id": "accessories",
         "name": "Accessories",
         "haveChilds": true,

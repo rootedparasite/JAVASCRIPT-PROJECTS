@@ -41,7 +41,7 @@
 .sidemenu-links__container {
   height: 100%;
   width: 100%;
-  margin: 1rem 0 1rem;
+  margin: 1rem 0;
   padding: 0 1.5rem;
   overflow-y: scroll;
 
@@ -65,7 +65,7 @@
   font-weight: 600;
   transition: var(--transition-400ms);
   cursor: pointer;
-  margin: 0 0 .2rem;
+  margin: 0 0 .75rem;
 
   &:hover,
   &.active {
@@ -80,17 +80,12 @@
     padding: .1rem 0 .1rem .75rem;
     height: fit-content;
     margin: .5rem 0 1rem .5rem;
-
   }
   & li {
-    margin: 0 0 .6rem;
+    margin: 0 0 .3rem;
     font-size: 1rem;
     font-weight: 600;
     letter-spacing: -.8px;
-
-    &:last-child {
-      margin: 0;
-    }
   }
 }
 
