@@ -1,5 +1,5 @@
 import { sidemenuManager } from "./components/sidemenu.js";
-import { toggleBodyScroll } from "./utilities/functions.js";
+import { addCommonClass, toggleBodyScroll } from "./utilities/functions.js";
 
 // * This function hide loading screen
 const hideLoadingScreen = () => {
@@ -24,4 +24,5 @@ const hideLoadingScreen = () => {
   } catch(err) {
     console.error(err)
   }
+  addCommonClass();
 })();

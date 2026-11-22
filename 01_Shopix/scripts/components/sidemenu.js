@@ -1,7 +1,31 @@
-import { addCommonClass } from "../utilities/functions.js";
+const disablePreviousOpenSubCategories = () => {
+  const elements = document.querySelectorAll(".sidemenu-category__target");
+  if(!elements.length) return;
+  elements.forEach(targetEl => {
+    const selectorEl = document.querySelector(`.${targetEl.getAttribute("data-selector")}`);
+    if(!selectorEl) return;
+    selectorEl.classList.remove("active");
+    targetEl.classList.remove("active");
+  });
+}
 
+const categoriesTogglers = () => {
+  const elements = document.querySelectorAll(".sidemenu-category__target");
+  if(!elements.length) return;
+  elements.forEach(targetEl => {
+    const selectorEl = document.querySelector(`.${targetEl.getAttribute("data-selector")}`);
+    if(!selectorEl) return;
+    targetEl.addEventListener("click", (e) => {
+      if(!targetEl.classList.contains("active")) {
+        disablePreviousOpenSubCategories();
+      }
+      selectorEl.classList.toggle("active");
+      targetEl.classList.toggle("active");
+    })
+  })
+};
 
-// * This function Render Children Categories   
+// * This function Render Children Categories
 const receiveRequestForRenderSubCategories = (subCategories, parentCategoryEl, subCategoryClass) => {
   const subCategoriesContainerEl = document.createElement("ul");
   subCategoriesContainerEl.className = `sidemenu-subcategories__list ${subCategoryClass}`;
@@ -56,6 +80,5 @@ const sendRequestForRenderSubCategories = (categories) => {
 
 export const sidemenuManager = (data) => {
   sendRequestForRenderSubCategories(data[0].categories);
-  toggleDropdownCategories();
-  addCommonClass()
+  categoriesTogglers();
 }

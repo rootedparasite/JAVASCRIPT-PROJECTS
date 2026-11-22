@@ -71,6 +71,9 @@
   &.active {
     color: var(--color-warning);
   }
+  &.active i {
+    transform: rotate(90deg);
+  }
 }
 .sidemenu-subcategories__list {
   border-left: 3px solid var(--color-warning);

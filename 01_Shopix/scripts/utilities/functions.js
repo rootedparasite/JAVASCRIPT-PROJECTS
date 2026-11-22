@@ -29,7 +29,7 @@ export const addCommonClass = () => {
     addClassOnBulk(selectorEl, commonClass);
     addClassOnBulk(targetEl, commonClass);
   });
-};
+}; addCommonClass();
 
 //* This function activate element with body scroll disable on requirement 
 const activateElementOnClick = () => {
