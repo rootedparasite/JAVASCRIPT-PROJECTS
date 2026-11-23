@@ -81,3 +81,26 @@ const deactivateOnWindowClick = () => {
     });
   });
 }; deactivateOnWindowClick();
+
+
+// * This function Make Show Password Button Functional 
+const showPassword = () => {
+  const elements = document.querySelectorAll(".showInputPassword");
+  if(!elements.length) return;
+
+  elements.forEach(element => {
+    const iconEl = element.querySelector("i");
+    const inputEl = element.querySelector("input");
+    const buttonEl = element.querySelector("button");
+    if(!iconEl || !inputEl || !buttonEl) return;
+    buttonEl.addEventListener("click", () => {
+      if(inputEl.type === "text") {
+        iconEl.classList.replace("ti-eye", "ti-eye-off"); 
+        inputEl.type = "password";
+      } else {
+        iconEl.classList.replace("ti-eye-off", "ti-eye");
+        inputEl.type = "text";
+      }
+    });
+  });
+}; showPassword();

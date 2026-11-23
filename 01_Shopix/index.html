@@ -168,9 +168,9 @@
             <button><i class="ti ti-heart"></i><span class="carts-count cart-count">0</span></button>
           </div>
           <div class="login-conden__container">
-            <button class="underline-transition activateOnClick" data-selector="user-credentials__container" data-bodyScrollDisabled="true">Log in</button>
+            <button class="underline-transition activateOnClick user-credential__btn" data-selector="user-credentials__container" data-bodyScrollDisabled="true">Log in</button>
             <p>|</p>
-            <button class="underline-transition activateOnClick" data-selector="user-credentials__container" data-bodyScrollDisabled="true">Sign up</button>
+            <button class="underline-transition activateOnClick user-credential__btn signupBtnElem" data-selector="user-credentials__container" data-bodyScrollDisabled="true">Sign up</button>
           </div>
         </div>
         <!--* Header Icons End -->
@@ -216,7 +216,7 @@
   </header>
   <!--* Header End -->
   <!--* LOGIN / SIGNUP START HERE -->
-  <div class="user-credentials__container">
+  <div class="user-credentials__container active">
     <div class="user-credentials__wrapper">
       <button type="button" class="close-form__button deactiveElementOnClick" data-selector="user-credentials__container" aria-label="Close form"><i class="ti ti-x"></i></button>
       <div class="UC-header">
@@ -225,7 +225,7 @@
         <p class="UC-description">Get started by creating your account. It only takes a minute.</p>
       </div>
       <form class="user-credentials__form">
-        <div class="two-text__inputFields">
+        <div class="two-text__inputFields signupElement">
           <div class="input-container">
             <label for="firstName">First Name</label>
             <input type="text" id="firstName" name="firstName" placeholder="Enter first name" autocomplete="given-name" required>
@@ -242,16 +242,16 @@
         <div class="two-text__inputFields">
           <div class="input-container password-input__container">
             <label for="password">Password</label>
-            <div class="UC-password__wrapper">
-              <input type="password" id="password" name="password" placeholder="Create password" autocomplete="new-password" required />
-              <button type="button" class="UC-password__toggle"><i class="ti ti-eye"></i></button>
+            <div class="UC-password__wrapper showInputPassword">
+              <input type="password" class="UC-password__input" id="password" name="password" placeholder="Create password" autocomplete="new-password" required />
+              <button type="button" class="UC-password__toggle"><i class="ti ti-eye-off"></i></button>
             </div>
           </div>
-          <div class="input-container password-input__container">
+          <div class="input-container password-input__container signupElement">
             <label for="confirmPassword">Confirm Password</label>
-            <div class="UC-password__wrapper">
+            <div class="UC-password__wrapper showInputPassword">
               <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm password" required>
-              <button type="button" class="UC-password__toggle"><i class="ti ti-eye"></i></button>
+              <button type="button" class="UC-password__toggle"><i class="ti ti-eye-off"></i></button>
             </div>
           </div>
         </div>
@@ -262,7 +262,7 @@
           </label>
         </div>
         <button type="submit" class="UC-submit__button">Create Account<i class="ti ti-arrow-right"></i></button>
-        <p class="UC-footer">Already have an account? <button> Sign In</button></p>
+        <p class="UC-footer"><span class="UC-footer__text">Already have an account?</span> <button type="button" class="UC-footer__btn user-credential__btn"> Sign In</button></p>
       </form>
     </div>
   </div>
