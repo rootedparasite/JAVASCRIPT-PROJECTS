@@ -11,6 +11,11 @@
   height: 1.8rem;
   background: var(--color-black);
   color: var(--color-white);
+  overflow: hidden;
+  transition: var(--transition-300ms);
+  &.active {
+    height: 0;
+  }
 }
 .top-header__items {
   display: flex;

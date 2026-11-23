@@ -68,6 +68,7 @@ body {
   background: var(--body-bg);
   color: var(--color-black);
   font-family: var(--body-font);
+  height: 400vh;
 }
 
 body.disable-scroll {

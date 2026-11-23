@@ -72,7 +72,6 @@ const sendRequestForRenderSubCategories = (categories) => {
       headingContainerEl.classList.add("sidemenu-category__target")
       receiveRequestForRenderSubCategories(currentCategory.subcategories, listItemEl, currentCategory.id)
     }
-
     categoriesContainerEl.appendChild(listItemEl);
   });
 };
