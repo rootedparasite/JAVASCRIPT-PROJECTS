@@ -10,6 +10,7 @@
 @import url("./components/footer.css");
 @import url("./components/cart.css");
 @import url("./components/wishlist.css");
+@import url("./components/swiper.css");
 
 /* * PAGES */
 @import url("./pages/home.css");

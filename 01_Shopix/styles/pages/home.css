@@ -1,1 +1,21 @@
 /** HERO SECTION */
+.hero-section {
+  height: 30rem;
+}
+.hero-items__container {
+  height: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  box-shadow: var(--box-shadow-superlight);
+}
+.hero-categories__container {
+  height: 100%;
+  width: 22rem;
+  background: var(--color-white);
+  box-shadow: var(--box-shadow-superlight);
+}
+.hero-categories__wrapper {
+  height: 100%;
+  width: 100%;
+}

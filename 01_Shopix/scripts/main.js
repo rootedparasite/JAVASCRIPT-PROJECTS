@@ -1,5 +1,6 @@
 import { headerManager } from "./components/header.js";
 import { addCommonClass, toggleBodyScroll } from "./utilities/functions.js";
+import "./components/swiper.js";
 
 // * This function hide loading screen
 const hideLoadingScreen = () => {
@@ -20,6 +21,7 @@ const hideLoadingScreen = () => {
     if(!response.ok) throw new Error("Unable to fetch data from API. Something went wrong with your API File please check and try again later. ")
     const data = await response.json();
     headerManager(data)
+    homePageManager();
 
   } catch(err) {
     console.error(err)

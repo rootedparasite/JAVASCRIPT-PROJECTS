@@ -4,6 +4,11 @@
   top: 0;
   left: 0;
   z-index: 10000;
+  transition: var(--transition-300ms);
+
+  &.active {
+    box-shadow: var(--box-shadow-superlight);
+  }
 }
 
 /*** TOP HEADER */
@@ -38,7 +43,6 @@
 .navbar {
   height: 5rem;
   background: var(--color-white);
-  box-shadow: var(--box-shadow-light);
 }
 .navbar-items__container {
   display: flex;

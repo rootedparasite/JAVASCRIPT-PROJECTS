@@ -75,6 +75,10 @@ body.disable-scroll {
   overflow: hidden;
 }
 
+main {
+  margin: 7rem 0 0;
+}
+
 @media screen and (width <= 1440px) { html { font-size: 15px; } }
 @media screen and (width <= 1280px) { html { font-size: 14px; } }
 @media screen and (width <= 1024px) { html { font-size: 13px; } }

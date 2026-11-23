@@ -73,6 +73,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css" />
 </head>
 <body class="disable-scroll">
   <!--* Loading Start -->
@@ -111,7 +112,7 @@
   </div>
   <!--* Loading End -->
   <!--* Header Start -->
-  <header class="main-header">
+  <header class="main-header activeOnScroll" data-scrollThreshold="100">
     <!--* Top Header Start -->
     <div class="top-header activeOnScroll" data-scrollThreshold="100">
       <div class="container top-header__items">
@@ -329,6 +330,39 @@
     </div>
   </div>
   <!--* WISHLIST END HERE -->
+  <!--* MAIN START HERE -->
+  <main>
+    <!--* HERO SECTION START HERE -->
+    <section class="hero-section">
+      <div class="container hero-items__container">
+        <!--* HERO CATEGORIES START -->
+        <div class="hero-categories__container">
+          <ul class="hero-categories__wrapper">
+
+          </ul>
+        </div>
+        <!--* HERO CATEGORIES END -->
+        <!--* HERO SLIDER START -->
+        <div class="swiper mySwiper hero-slider">
+          <div class="swiper-wrapper hero-slider__wrapper">
+            <div class="swiper-slide hero-slide">Slide 1</div>
+            <div class="swiper-slide hero-slide">Slide 2</div>
+            <div class="swiper-slide hero-slide">Slide 3</div>
+            <div class="swiper-slide hero-slide">Slide 4</div>
+            <div class="swiper-slide hero-slide">Slide 5</div>
+            <div class="swiper-slide hero-slide">Slide 6</div>
+            <div class="swiper-slide hero-slide">Slide 7</div>
+            <div class="swiper-slide hero-slide">Slide 8</div>
+            <div class="swiper-slide hero-slide">Slide 9</div>
+          </div>
+          <div class="swiper-pagination hero-slide__pagination"></div>
+        </div>
+        <!--* HERO SLIDER END -->
+      </div>
+    </section>
+    <!--* HERO SECTION END HERE -->
+  </main>
+  <!--* MAIN END HERE -->
 
   <template id="SR-product__cardTemplate">
     <a href="./product.html" class="SR-product__card">
