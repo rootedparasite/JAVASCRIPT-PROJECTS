@@ -295,8 +295,13 @@
     display: none;
   }
   .navbar-icons__container {
-    display: none;
+    position: absolute;
+    top: .3rem;
+    right: 6rem;
   }
+   .login-conden__container {
+    display: none;
+   }
   .navbar-items__container {
     flex-direction: column;
     align-items: unset;

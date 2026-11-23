@@ -319,7 +319,7 @@
 }
 @media (max-width: 480px) {
 
-  .cart-container {
+  .cart-container.active {
     width: 100%;
   }
 
