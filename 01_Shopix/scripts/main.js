@@ -25,4 +25,5 @@ const hideLoadingScreen = () => {
     console.error(err)
   }
   addCommonClass();
+  userCredentialsManager();
 })();
