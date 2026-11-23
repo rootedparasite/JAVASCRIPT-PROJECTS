@@ -26,6 +26,7 @@ const hideSignupElements = (isHide) => {
     changeText("UC-description", "Get started by Login your account. It only takes a minute.");
     changeText("UC-footer__text", "Don't have an account? ");
     changeText("UC-footer__btn", "Sign Up");
+    changeText("UC-submit__button", "Log In");
     addClassInElement("UC-footer__btn", "signupBtnElem", true);
     changeInputPlaceholder("UC-password__input", "Enter Your Password");
   } else {
@@ -34,6 +35,7 @@ const hideSignupElements = (isHide) => {
     changeText("UC-description", "Get started by creating your account. It only takes a minute..");
     changeText("UC-footer__text", "Already have an account? ");
     changeText("UC-footer__btn", "Sign In");
+    changeText("UC-submit__button", "Create Account");
     addClassInElement("UC-footer__btn", "signupBtnElem", false);
     changeInputPlaceholder("UC-password__input", "Create Your Password");
   }

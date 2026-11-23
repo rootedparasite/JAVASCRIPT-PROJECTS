@@ -104,3 +104,10 @@ const showPassword = () => {
     });
   });
 }; showPassword();
+
+// * This function stop propagation of parent listener to its child
+const stopPropagationForChilds = () => {
+  const elements = document.querySelectorAll(".stopPropagation");
+  if(!elements.length) return;
+  elements.forEach(element => element.addEventListener("click", (e) => e.stopPropagation()));
+}; stopPropagationForChilds();
