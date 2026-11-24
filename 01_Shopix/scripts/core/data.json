@@ -207,6 +207,48 @@
           { "id": "watch-accessories", "name": "Watch Accessories", "link": "./categories.html" }
         ]
       }
+    ],
+    "herobanners": [
+      {
+        "id": "hero-smartphones",
+        "img": "./assets/images/hero-banner-1.webp",
+        "top_heading": "THE FUTURE IS HERE",
+        "main_header": "Discover the Next Generation of Smartphones",
+        "bottom_heading": "Explore powerful smartphones featuring stunning displays, exceptional cameras and innovative technology.",
+        "button_name": "Explore Smartphones"
+      },
+      {
+        "id": "hero-laptops",
+        "img": "./assets/images/hero-banner-2.webp",
+        "top_heading": "POWER MEETS PERFORMANCE",
+        "main_header": "Power Your Ideas with the Right Technology",
+        "bottom_heading": "Discover high-performance laptops and computers designed to elevate your productivity and creativity.",
+        "button_name": "Explore Laptops"
+      },
+      {
+        "id": "hero-gaming",
+        "img": "./assets/images/hero-banner-3.webp",
+        "top_heading": "BUILT FOR GAMERS",
+        "main_header": "Level Up Your Gaming Experience",
+        "bottom_heading": "Gear up with powerful gaming laptops, precision accessories and everything you need to play at your best.",
+        "button_name": "Explore Gaming"
+      },
+      {
+        "id": "hero-wearables",
+        "img": "./assets/images/hero-banner-4.webp",
+        "top_heading": "TECH MEETS LIFESTYLE",
+        "main_header": "Smart Technology for Everyday Life",
+        "bottom_heading": "Stay connected and experience convenience with stylish smartwatches and innovative wearable technology.",
+        "button_name": "Discover Wearables"
+      },
+      {
+        "id": "hero-audio",
+        "img": "./assets/images/hero-banner-5.webp",
+        "top_heading": "SOUND WITHOUT LIMITS",
+        "main_header": "Experience Sound Like Never Before",
+        "bottom_heading": "Immerse yourself in exceptional audio with premium headphones, wireless earbuds and powerful speakers.",
+        "button_name": "Explore Audio"
+      }
     ]
   }
 ]
