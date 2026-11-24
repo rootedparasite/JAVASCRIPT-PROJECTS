@@ -147,3 +147,40 @@ const activateOnScroll = () => {
     })
   })
 }; activateOnScroll();
+
+
+/* This function toggles active class on element intersection */
+export const addIntersecterTransition = () => {
+  const elements = document.querySelectorAll(".addIntersecterTransition");
+
+  if (!elements.length) return;
+
+  const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+      entry.target.classList.toggle("active", entry.isIntersecting);
+    });
+
+  }, {
+    threshold: 0.15
+  });
+
+  elements.forEach(element => observer.observe(element));
+};
+
+
+//* This function active element on mouseover and deactivate mouseout
+export const activeElementOnMouseOver = () => {
+  const elements = document.querySelectorAll(".activeOnHover");
+  if(!elements.length) return;
+
+  elements.forEach(targetEl => {
+    const selectorEl = document.querySelector(`.${targetEl.getAttribute("data-selector")}`);
+    console.log(selectorEl)
+    if(!selectorEl) return;
+    targetEl.addEventListener("mouseover", () => selectorEl.classList.add("active"));
+    targetEl.addEventListener("mouseout", () => selectorEl.classList.remove("active"));
+  
+  });
+}; 
+

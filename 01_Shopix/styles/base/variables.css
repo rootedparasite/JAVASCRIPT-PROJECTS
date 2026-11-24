@@ -7,6 +7,8 @@
   --color-red: #ff0000;
   --color-black-3: #333;
   --color-light-1: #c0c0c0;
+  --color-dark-warning: #ff9900;
+  --color-light-2: #ececec;
 
   --body-font: "Open Sans", sans-serif;
   --heading-font: "Montserrat", sans-serif;
@@ -21,6 +23,11 @@
   --transition-900ms: all 900ms ease;
   --transition-1000ms: all 1000ms ease;
   --transition-1100ms: all 1100ms ease;
+  --transition-1400ms: all 1400ms ease;
+  --transition-1600ms: all 1600ms ease;
+  --transition-2000ms: all 2000ms ease;
+  --transition-2200ms: all 2200ms ease;
+
 
   --box-shadow-light: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   --box-shadow-superlight: rgba(0, 0, 0, 0.16) 0px 1px 4px;

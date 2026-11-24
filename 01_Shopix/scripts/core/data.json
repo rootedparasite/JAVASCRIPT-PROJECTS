@@ -1,210 +1,690 @@
-
 [
   {
     "categories": [
-        {
-          "id": "value-of-the-day",
-          "name": "Value of the Day",
-          "haveChilds": false
-        },
-        {
-          "id": "top-100-offers",
-          "name": "Top 100 Offers",
-          "haveChilds": false
-        },
-        {
-          "id": "new-arrivals",
-          "name": "New Arrivals",
-          "haveChilds": false
-        },
-        {
-        "id": "accessories",
-        "name": "Accessories",
-        "haveChilds": true,
-        "subcategories": [
-          { "id": "fashion-accessories", "name": "Fashion Accessories", "link": "./categories.html" },
-          { "id": "bags-and-backpacks", "name": "Bags & Backpacks", "link": "./categories.html" },
-          { "id": "wallets-and-cardholders", "name": "Wallets & Cardholders", "link": "./categories.html" },
-          { "id": "belts-and-suspenders", "name": "Belts & Suspenders", "link": "./categories.html" },
-          { "id": "sunglasses-accessories", "name": "Sunglasses Accessories", "link": "./categories.html" },
-          { "id": "hats-and-caps", "name": "Hats & Caps", "link": "./categories.html" },
-          { "id": "jewelry-accessories", "name": "Jewelry & Accessories", "link": "./categories.html" },
-          { "id": "phone-accessories", "name": "Phone Accessories", "link": "./categories.html" },
-          { "id": "computer-accessories", "name": "Computer Accessories", "link": "./categories.html" },
-          { "id": "travel-accessories", "name": "Travel Accessories", "link": "./categories.html" },
-          { "id": "keychains-and-collectibles", "name": "Keychains & Collectibles", "link": "./categories.html" },
-          { "id": "everyday-carry", "name": "Everyday Carry Essentials", "link": "./categories.html" }
-        ]
+      {
+        "id": "new-arrivals",
+        "name": "New Arrivals",
+        "haveChilds": false,
+        "img": "./assets/images/categories/category-1.png"
       },
       {
-        "id": "cameras-audio-and-video",
-        "name": "Cameras, Audio & Video",
+        "id": "value-of-the-day",
+        "name": "Value of the Day",
         "haveChilds": true,
+        "img": "./assets/images/categories/category-2.png",
         "subcategories": [
-          { "id": "digital-cameras", "name": "Digital Cameras", "link": "./categories.html" },
-          { "id": "dslr-cameras", "name": "DSLR Cameras", "link": "./categories.html" },
-          { "id": "mirrorless-cameras", "name": "Mirrorless Cameras", "link": "./categories.html" },
-          { "id": "action-cameras", "name": "Action Cameras", "link": "./categories.html" },
-          { "id": "security-cameras", "name": "Security Cameras", "link": "./categories.html" },
-          { "id": "camera-lenses", "name": "Camera Lenses", "link": "./categories.html" },
-          { "id": "camera-accessories", "name": "Camera Accessories", "link": "./categories.html" },
-          { "id": "microphones", "name": "Microphones", "link": "./categories.html" },
-          { "id": "headphones-and-earphones", "name": "Headphones & Earphones", "link": "./categories.html" },
-          { "id": "speakers", "name": "Speakers", "link": "./categories.html" },
-          { "id": "video-recording-equipment", "name": "Video Recording Equipment", "link": "./categories.html" },
-          { "id": "camera-tripods-and-lighting", "name": "Tripods & Camera Lighting", "link": "./categories.html" }
-        ]
-      },
-      {
-        "id": "car-motorbike-and-industrial",
-        "name": "Car, Motorbike & Industrial",
-        "haveChilds": true,
-        "subcategories": [
-          { "id": "car-accessories", "name": "Car Accessories", "link": "./categories.html" },
-          { "id": "motorbike-accessories", "name": "Motorbike Accessories", "link": "./categories.html" },
-          { "id": "car-electronics", "name": "Car Electronics", "link": "./categories.html" },
-          { "id": "car-audio-and-video", "name": "Car Audio & Video", "link": "./categories.html" },
-          { "id": "car-care-and-cleaning", "name": "Car Care & Cleaning", "link": "./categories.html" },
-          { "id": "car-tools-and-equipment", "name": "Car Tools & Equipment", "link": "./categories.html" },
-          { "id": "motorbike-helmets", "name": "Motorbike Helmets", "link": "./categories.html" },
-          { "id": "motorbike-parts", "name": "Motorbike Parts", "link": "./categories.html" },
-          { "id": "automotive-lighting", "name": "Automotive Lighting", "link": "./categories.html" },
-          { "id": "tyres-and-wheels", "name": "Tyres & Wheels", "link": "./categories.html" },
-          { "id": "industrial-tools", "name": "Industrial Tools", "link": "./categories.html" },
-          { "id": "industrial-equipment", "name": "Industrial Equipment", "link": "./categories.html" }
-        ]
-      },
-      {
-        "id": "computers-and-accessories",
-        "name": "Computers & Accessories",
-        "haveChilds": true,
-        "subcategories": [
-          { "id": "desktop-computers", "name": "Desktop Computers", "link": "./categories.html" },
-          { "id": "laptops", "name": "Laptops", "link": "./categories.html" },
-          { "id": "gaming-pcs", "name": "Gaming PCs", "link": "./categories.html" },
-          { "id": "computer-monitors", "name": "Computer Monitors", "link": "./categories.html" },
-          { "id": "computer-components", "name": "Computer Components", "link": "./categories.html" },
-          { "id": "processors", "name": "Processors (CPU)", "link": "./categories.html" },
-          { "id": "graphics-cards", "name": "Graphics Cards (GPU)", "link": "./categories.html" },
-          { "id": "motherboards", "name": "Motherboards", "link": "./categories.html" },
-          { "id": "ram-and-memory", "name": "RAM & Memory", "link": "./categories.html" },
-          { "id": "storage-devices", "name": "Storage Devices", "link": "./categories.html" },
-          { "id": "keyboards-and-mice", "name": "Keyboards & Mice", "link": "./categories.html" },
-          { "id": "printers-and-scanners", "name": "Printers & Scanners", "link": "./categories.html" }
-        ]
-      },
-      {
-        "id": "mobiles-and-tablets",
-        "name": "Mobiles & Tablets",
-        "haveChilds": true,
-        "subcategories": [
-          { "id": "smartphones", "name": "Smartphones", "link": "./categories.html" },
-          { "id": "feature-phones", "name": "Feature Phones", "link": "./categories.html" },
-          { "id": "tablets", "name": "Tablets", "link": "./categories.html" },
-          { "id": "ipad-accessories", "name": "Tablet Accessories", "link": "./categories.html" },
-          { "id": "mobile-cases-and-covers", "name": "Mobile Cases & Covers", "link": "./categories.html" },
-          { "id": "screen-protectors", "name": "Screen Protectors", "link": "./categories.html" },
-          { "id": "chargers-and-adapters", "name": "Chargers & Adapters", "link": "./categories.html" },
-          { "id": "power-banks", "name": "Power Banks", "link": "./categories.html" },
-          { "id": "mobile-batteries", "name": "Mobile Batteries", "link": "./categories.html" },
-          { "id": "mobile-cables", "name": "Mobile Cables", "link": "./categories.html" },
-          { "id": "mobile-audio-accessories", "name": "Mobile Audio Accessories", "link": "./categories.html" },
-          { "id": "mobile-repair-accessories", "name": "Mobile Repair Accessories", "link": "./categories.html" }
-        ]
-      },
-      {
-        "id": "movies-music-and-video",
-        "name": "Movies, Music & Video",
-        "haveChilds": true,
-        "subcategories": [
-          { "id": "movies", "name": "Movies", "link": "./categories.html" },
-          { "id": "music-albums", "name": "Music Albums", "link": "./categories.html" },
-          { "id": "blu-ray-discs", "name": "Blu-ray Discs", "link": "./categories.html" },
-          { "id": "dvd-collections", "name": "DVD Collections", "link": "./categories.html" },
-          { "id": "documentaries", "name": "Documentaries", "link": "./categories.html" },
-          { "id": "tv-series", "name": "TV Series", "link": "./categories.html" },
-          { "id": "concert-films", "name": "Concert Films", "link": "./categories.html" },
-          { "id": "music-collections", "name": "Music Collections", "link": "./categories.html" },
-          { "id": "animated-movies", "name": "Animated Movies", "link": "./categories.html" },
-          { "id": "educational-videos", "name": "Educational Videos", "link": "./categories.html" },
-          { "id": "classic-movies", "name": "Classic Movies", "link": "./categories.html" },
-          { "id": "video-collections", "name": "Video Collections", "link": "./categories.html" }
+          {
+            "id": "daily-best-deals",
+            "name": "Daily Best Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "daily-electronics-deals",
+            "name": "Daily Electronics Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "daily-mobile-deals",
+            "name": "Daily Mobile Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "daily-laptop-deals",
+            "name": "Daily Laptop Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "daily-fashion-deals",
+            "name": "Daily Fashion Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "daily-home-deals",
+            "name": "Daily Home Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "daily-gadget-deals",
+            "name": "Daily Gadget Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "flash-deals",
+            "name": "Flash Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "exclusive-offers",
+            "name": "Exclusive Offers",
+            "link": "./categories.html"
+          },
+          {
+            "id": "best-value-products",
+            "name": "Best Value Products",
+            "link": "./categories.html"
+          },
+          {
+            "id": "special-discounts",
+            "name": "Special Discounts",
+            "link": "./categories.html"
+          },
+          {
+            "id": "daily-clearance",
+            "name": "Daily Clearance",
+            "link": "./categories.html"
+          }
         ]
       },
       {
         "id": "top-100-offers",
         "name": "Top 100 Offers",
         "haveChilds": true,
+        "img": "./assets/images/categories/category-3.png",
         "subcategories": [
-          { "id": "top-electronics-deals", "name": "Top Electronics Deals", "link": "./categories.html" },
-          { "id": "smartphone-deals", "name": "Smartphone Deals", "link": "./categories.html" },
-          { "id": "laptop-deals", "name": "Laptop Deals", "link": "./categories.html" },
-          { "id": "computer-accessory-deals", "name": "Computer Accessory Deals", "link": "./categories.html" },
-          { "id": "camera-deals", "name": "Camera Deals", "link": "./categories.html" },
-          { "id": "audio-deals", "name": "Audio Deals", "link": "./categories.html" },
-          { "id": "gaming-deals", "name": "Gaming Deals", "link": "./categories.html" },
-          { "id": "fashion-deals", "name": "Fashion Deals", "link": "./categories.html" },
-          { "id": "watch-deals", "name": "Watch Deals", "link": "./categories.html" },
-          { "id": "home-appliance-deals", "name": "Home Appliance Deals", "link": "./categories.html" },
-          { "id": "limited-time-deals", "name": "Limited-Time Deals", "link": "./categories.html" },
-          { "id": "clearance-deals", "name": "Clearance Deals", "link": "./categories.html" }
+          {
+            "id": "top-electronics-deals",
+            "name": "Top Electronics Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "smartphone-deals",
+            "name": "Smartphone Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "laptop-deals",
+            "name": "Laptop Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "computer-accessory-deals",
+            "name": "Computer Accessory Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "camera-deals",
+            "name": "Camera Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "audio-deals",
+            "name": "Audio Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "gaming-deals",
+            "name": "Gaming Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "fashion-deals",
+            "name": "Fashion Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "watch-deals",
+            "name": "Watch Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "home-appliance-deals",
+            "name": "Home Appliance Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "limited-time-deals",
+            "name": "Limited-Time Deals",
+            "link": "./categories.html"
+          },
+          {
+            "id": "clearance-deals",
+            "name": "Clearance Deals",
+            "link": "./categories.html"
+          }
+        ]
+      },
+      {
+        "id": "mobiles-and-tablets",
+        "name": "Mobiles & Tablets",
+        "haveChilds": true,
+        "img": "./assets/images/categories/category-4.png",
+        "subcategories": [
+          {
+            "id": "smartphones",
+            "name": "Smartphones",
+            "link": "./categories.html"
+          },
+          {
+            "id": "feature-phones",
+            "name": "Feature Phones",
+            "link": "./categories.html"
+          },
+          {
+            "id": "tablets",
+            "name": "Tablets",
+            "link": "./categories.html"
+          },
+          {
+            "id": "ipad-accessories",
+            "name": "Tablet Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "mobile-cases-and-covers",
+            "name": "Mobile Cases & Covers",
+            "link": "./categories.html"
+          },
+          {
+            "id": "screen-protectors",
+            "name": "Screen Protectors",
+            "link": "./categories.html"
+          },
+          {
+            "id": "chargers-and-adapters",
+            "name": "Chargers & Adapters",
+            "link": "./categories.html"
+          },
+          {
+            "id": "power-banks",
+            "name": "Power Banks",
+            "link": "./categories.html"
+          },
+          {
+            "id": "mobile-batteries",
+            "name": "Mobile Batteries",
+            "link": "./categories.html"
+          },
+          {
+            "id": "mobile-cables",
+            "name": "Mobile Cables",
+            "link": "./categories.html"
+          },
+          {
+            "id": "mobile-audio-accessories",
+            "name": "Mobile Audio Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "mobile-repair-accessories",
+            "name": "Mobile Repair Accessories",
+            "link": "./categories.html"
+          }
+        ]
+      },
+      {
+        "id": "computers-and-accessories",
+        "name": "Computers & Accessories",
+        "haveChilds": true,
+        "img": "./assets/images/categories/category-5.png",
+        "subcategories": [
+          {
+            "id": "desktop-computers",
+            "name": "Desktop Computers",
+            "link": "./categories.html"
+          },
+          {
+            "id": "laptops",
+            "name": "Laptops",
+            "link": "./categories.html"
+          },
+          {
+            "id": "gaming-pcs",
+            "name": "Gaming PCs",
+            "link": "./categories.html"
+          },
+          {
+            "id": "computer-monitors",
+            "name": "Computer Monitors",
+            "link": "./categories.html"
+          },
+          {
+            "id": "computer-components",
+            "name": "Computer Components",
+            "link": "./categories.html"
+          },
+          {
+            "id": "processors",
+            "name": "Processors (CPU)",
+            "link": "./categories.html"
+          },
+          {
+            "id": "graphics-cards",
+            "name": "Graphics Cards (GPU)",
+            "link": "./categories.html"
+          },
+          {
+            "id": "motherboards",
+            "name": "Motherboards",
+            "link": "./categories.html"
+          },
+          {
+            "id": "ram-and-memory",
+            "name": "RAM & Memory",
+            "link": "./categories.html"
+          },
+          {
+            "id": "storage-devices",
+            "name": "Storage Devices",
+            "link": "./categories.html"
+          },
+          {
+            "id": "keyboards-and-mice",
+            "name": "Keyboards & Mice",
+            "link": "./categories.html"
+          },
+          {
+            "id": "printers-and-scanners",
+            "name": "Printers & Scanners",
+            "link": "./categories.html"
+          }
+        ]
+      },
+      {
+        "id": "cameras-audio-and-video",
+        "name": "Cameras, Audio & Video",
+        "haveChilds": true,
+        "img": "./assets/images/categories/category-6.png",
+        "subcategories": [
+          {
+            "id": "digital-cameras",
+            "name": "Digital Cameras",
+            "link": "./categories.html"
+          },
+          {
+            "id": "dslr-cameras",
+            "name": "DSLR Cameras",
+            "link": "./categories.html"
+          },
+          {
+            "id": "mirrorless-cameras",
+            "name": "Mirrorless Cameras",
+            "link": "./categories.html"
+          },
+          {
+            "id": "action-cameras",
+            "name": "Action Cameras",
+            "link": "./categories.html"
+          },
+          {
+            "id": "security-cameras",
+            "name": "Security Cameras",
+            "link": "./categories.html"
+          },
+          {
+            "id": "camera-lenses",
+            "name": "Camera Lenses",
+            "link": "./categories.html"
+          },
+          {
+            "id": "camera-accessories",
+            "name": "Camera Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "microphones",
+            "name": "Microphones",
+            "link": "./categories.html"
+          },
+          {
+            "id": "headphones-and-earphones",
+            "name": "Headphones & Earphones",
+            "link": "./categories.html"
+          },
+          {
+            "id": "speakers",
+            "name": "Speakers",
+            "link": "./categories.html"
+          },
+          {
+            "id": "video-recording-equipment",
+            "name": "Video Recording Equipment",
+            "link": "./categories.html"
+          },
+          {
+            "id": "camera-tripods-and-lighting",
+            "name": "Tripods & Camera Lighting",
+            "link": "./categories.html"
+          }
         ]
       },
       {
         "id": "tv-and-audio",
         "name": "TV & Audio",
         "haveChilds": true,
+        "img": "./assets/images/categories/category-7.png",
         "subcategories": [
-          { "id": "smart-tvs", "name": "Smart TVs", "link": "./categories.html" },
-          { "id": "led-tvs", "name": "LED TVs", "link": "./categories.html" },
-          { "id": "oled-tvs", "name": "OLED TVs", "link": "./categories.html" },
-          { "id": "qled-tvs", "name": "QLED TVs", "link": "./categories.html" },
-          { "id": "4k-and-8k-tvs", "name": "4K & 8K TVs", "link": "./categories.html" },
-          { "id": "home-theater-systems", "name": "Home Theater Systems", "link": "./categories.html" },
-          { "id": "soundbars", "name": "Soundbars", "link": "./categories.html" },
-          { "id": "bluetooth-speakers", "name": "Bluetooth Speakers", "link": "./categories.html" },
-          { "id": "amplifiers-and-receivers", "name": "Amplifiers & Receivers", "link": "./categories.html" },
-          { "id": "tv-mounts-and-stands", "name": "TV Mounts & Stands", "link": "./categories.html" },
-          { "id": "tv-accessories", "name": "TV Accessories", "link": "./categories.html" },
-          { "id": "streaming-devices", "name": "Streaming Devices", "link": "./categories.html" }
+          {
+            "id": "smart-tvs",
+            "name": "Smart TVs",
+            "link": "./categories.html"
+          },
+          {
+            "id": "led-tvs",
+            "name": "LED TVs",
+            "link": "./categories.html"
+          },
+          {
+            "id": "oled-tvs",
+            "name": "OLED TVs",
+            "link": "./categories.html"
+          },
+          {
+            "id": "qled-tvs",
+            "name": "QLED TVs",
+            "link": "./categories.html"
+          },
+          {
+            "id": "4k-and-8k-tvs",
+            "name": "4K & 8K TVs",
+            "link": "./categories.html"
+          },
+          {
+            "id": "home-theater-systems",
+            "name": "Home Theater Systems",
+            "link": "./categories.html"
+          },
+          {
+            "id": "soundbars",
+            "name": "Soundbars",
+            "link": "./categories.html"
+          },
+          {
+            "id": "bluetooth-speakers",
+            "name": "Bluetooth Speakers",
+            "link": "./categories.html"
+          },
+          {
+            "id": "amplifiers-and-receivers",
+            "name": "Amplifiers & Receivers",
+            "link": "./categories.html"
+          },
+          {
+            "id": "tv-mounts-and-stands",
+            "name": "TV Mounts & Stands",
+            "link": "./categories.html"
+          },
+          {
+            "id": "tv-accessories",
+            "name": "TV Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "streaming-devices",
+            "name": "Streaming Devices",
+            "link": "./categories.html"
+          }
         ]
       },
       {
-        "id": "value-of-the-day",
-        "name": "Value of the Day",
+        "id": "accessories",
+        "name": "Accessories",
         "haveChilds": true,
+        "img": "./assets/images/categories/category-8.png",
         "subcategories": [
-          { "id": "daily-best-deals", "name": "Daily Best Deals", "link": "./categories.html" },
-          { "id": "daily-electronics-deals", "name": "Daily Electronics Deals", "link": "./categories.html" },
-          { "id": "daily-mobile-deals", "name": "Daily Mobile Deals", "link": "./categories.html" },
-          { "id": "daily-laptop-deals", "name": "Daily Laptop Deals", "link": "./categories.html" },
-          { "id": "daily-fashion-deals", "name": "Daily Fashion Deals", "link": "./categories.html" },
-          { "id": "daily-home-deals", "name": "Daily Home Deals", "link": "./categories.html" },
-          { "id": "daily-gadget-deals", "name": "Daily Gadget Deals", "link": "./categories.html" },
-          { "id": "flash-deals", "name": "Flash Deals", "link": "./categories.html" },
-          { "id": "exclusive-offers", "name": "Exclusive Offers", "link": "./categories.html" },
-          { "id": "best-value-products", "name": "Best Value Products", "link": "./categories.html" },
-          { "id": "special-discounts", "name": "Special Discounts", "link": "./categories.html" },
-          { "id": "daily-clearance", "name": "Daily Clearance", "link": "./categories.html" }
+          {
+            "id": "fashion-accessories",
+            "name": "Fashion Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "bags-and-backpacks",
+            "name": "Bags & Backpacks",
+            "link": "./categories.html"
+          },
+          {
+            "id": "wallets-and-cardholders",
+            "name": "Wallets & Cardholders",
+            "link": "./categories.html"
+          },
+          {
+            "id": "belts-and-suspenders",
+            "name": "Belts & Suspenders",
+            "link": "./categories.html"
+          },
+          {
+            "id": "sunglasses-accessories",
+            "name": "Sunglasses Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "hats-and-caps",
+            "name": "Hats & Caps",
+            "link": "./categories.html"
+          },
+          {
+            "id": "jewelry-accessories",
+            "name": "Jewelry & Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "phone-accessories",
+            "name": "Phone Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "computer-accessories",
+            "name": "Computer Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "travel-accessories",
+            "name": "Travel Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "keychains-and-collectibles",
+            "name": "Keychains & Collectibles",
+            "link": "./categories.html"
+          },
+          {
+            "id": "everyday-carry",
+            "name": "Everyday Carry Essentials",
+            "link": "./categories.html"
+          }
         ]
       },
       {
         "id": "watches-and-eyewear",
         "name": "Watches & Eyewear",
         "haveChilds": true,
+        "img": "./assets/images/categories/category-9.png",
         "subcategories": [
-          { "id": "mens-watches", "name": "Men's Watches", "link": "./categories.html" },
-          { "id": "womens-watches", "name": "Women's Watches", "link": "./categories.html" },
-          { "id": "smartwatches", "name": "Smartwatches", "link": "./categories.html" },
-          { "id": "sports-watches", "name": "Sports Watches", "link": "./categories.html" },
-          { "id": "luxury-watches", "name": "Luxury Watches", "link": "./categories.html" },
-          { "id": "digital-watches", "name": "Digital Watches", "link": "./categories.html" },
-          { "id": "analog-watches", "name": "Analog Watches", "link": "./categories.html" },
-          { "id": "mens-sunglasses", "name": "Men's Sunglasses", "link": "./categories.html" },
-          { "id": "womens-sunglasses", "name": "Women's Sunglasses", "link": "./categories.html" },
-          { "id": "reading-glasses", "name": "Reading Glasses", "link": "./categories.html" },
-          { "id": "optical-frames", "name": "Optical Frames", "link": "./categories.html" },
-          { "id": "watch-accessories", "name": "Watch Accessories", "link": "./categories.html" }
+          {
+            "id": "mens-watches",
+            "name": "Men's Watches",
+            "link": "./categories.html"
+          },
+          {
+            "id": "womens-watches",
+            "name": "Women's Watches",
+            "link": "./categories.html"
+          },
+          {
+            "id": "smartwatches",
+            "name": "Smartwatches",
+            "link": "./categories.html"
+          },
+          {
+            "id": "sports-watches",
+            "name": "Sports Watches",
+            "link": "./categories.html"
+          },
+          {
+            "id": "luxury-watches",
+            "name": "Luxury Watches",
+            "link": "./categories.html"
+          },
+          {
+            "id": "digital-watches",
+            "name": "Digital Watches",
+            "link": "./categories.html"
+          },
+          {
+            "id": "analog-watches",
+            "name": "Analog Watches",
+            "link": "./categories.html"
+          },
+          {
+            "id": "mens-sunglasses",
+            "name": "Men's Sunglasses",
+            "link": "./categories.html"
+          },
+          {
+            "id": "womens-sunglasses",
+            "name": "Women's Sunglasses",
+            "link": "./categories.html"
+          },
+          {
+            "id": "reading-glasses",
+            "name": "Reading Glasses",
+            "link": "./categories.html"
+          },
+          {
+            "id": "optical-frames",
+            "name": "Optical Frames",
+            "link": "./categories.html"
+          },
+          {
+            "id": "watch-accessories",
+            "name": "Watch Accessories",
+            "link": "./categories.html"
+          }
+        ]
+      },
+      {
+        "id": "car-motorbike-and-industrial",
+        "name": "Car, Motorbike & Industrial",
+        "haveChilds": true,
+        "img": "./assets/images/categories/category-10.png",
+        "subcategories": [
+          {
+            "id": "car-accessories",
+            "name": "Car Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "motorbike-accessories",
+            "name": "Motorbike Accessories",
+            "link": "./categories.html"
+          },
+          {
+            "id": "car-electronics",
+            "name": "Car Electronics",
+            "link": "./categories.html"
+          },
+          {
+            "id": "car-audio-and-video",
+            "name": "Car Audio & Video",
+            "link": "./categories.html"
+          },
+          {
+            "id": "car-care-and-cleaning",
+            "name": "Car Care & Cleaning",
+            "link": "./categories.html"
+          },
+          {
+            "id": "car-tools-and-equipment",
+            "name": "Car Tools & Equipment",
+            "link": "./categories.html"
+          },
+          {
+            "id": "motorbike-helmets",
+            "name": "Motorbike Helmets",
+            "link": "./categories.html"
+          },
+          {
+            "id": "motorbike-parts",
+            "name": "Motorbike Parts",
+            "link": "./categories.html"
+          },
+          {
+            "id": "automotive-lighting",
+            "name": "Automotive Lighting",
+            "link": "./categories.html"
+          },
+          {
+            "id": "tyres-and-wheels",
+            "name": "Tyres & Wheels",
+            "link": "./categories.html"
+          },
+          {
+            "id": "industrial-tools",
+            "name": "Industrial Tools",
+            "link": "./categories.html"
+          },
+          {
+            "id": "industrial-equipment",
+            "name": "Industrial Equipment",
+            "link": "./categories.html"
+          }
+        ]
+      },
+      {
+        "id": "movies-music-and-video",
+        "name": "Movies, Music & Video",
+        "haveChilds": true,
+        "img": "./assets/images/categories/category-11.png",
+        "subcategories": [
+          {
+            "id": "movies",
+            "name": "Movies",
+            "link": "./categories.html"
+          },
+          {
+            "id": "music-albums",
+            "name": "Music Albums",
+            "link": "./categories.html"
+          },
+          {
+            "id": "blu-ray-discs",
+            "name": "Blu-ray Discs",
+            "link": "./categories.html"
+          },
+          {
+            "id": "dvd-collections",
+            "name": "DVD Collections",
+            "link": "./categories.html"
+          },
+          {
+            "id": "documentaries",
+            "name": "Documentaries",
+            "link": "./categories.html"
+          },
+          {
+            "id": "tv-series",
+            "name": "TV Series",
+            "link": "./categories.html"
+          },
+          {
+            "id": "concert-films",
+            "name": "Concert Films",
+            "link": "./categories.html"
+          },
+          {
+            "id": "music-collections",
+            "name": "Music Collections",
+            "link": "./categories.html"
+          },
+          {
+            "id": "animated-movies",
+            "name": "Animated Movies",
+            "link": "./categories.html"
+          },
+          {
+            "id": "educational-videos",
+            "name": "Educational Videos",
+            "link": "./categories.html"
+          },
+          {
+            "id": "classic-movies",
+            "name": "Classic Movies",
+            "link": "./categories.html"
+          },
+          {
+            "id": "video-collections",
+            "name": "Video Collections",
+            "link": "./categories.html"
+          }
         ]
       }
     ],

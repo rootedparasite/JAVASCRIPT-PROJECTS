@@ -334,21 +334,34 @@
   <main>
     <!--* HERO SECTION START HERE -->
     <section class="hero-section">
-      <div class="container hero-items__container">
-        <!--* HERO CATEGORIES START -->
-        <div class="hero-categories__container">
-          <ul class="hero-categories__wrapper">
-
-          </ul>
-        </div>
-        <!--* HERO CATEGORIES END -->
-        <!--* HERO SLIDER START -->
-        <div class="swiper mySwiper hero-slider">
-          <div class="swiper-wrapper hero-slider__wrapper">
-
+      <div class="container hero-items__wrapper">
+        <div class="hero-items__container">
+          <!--* HERO CATEGORIES START -->
+          <div class="hero-categories__container">
+            <ul class="hero-categories__wrapper hero-categories__parentContainer">
+              <li><h2 class="hero-category__title">Top Categories</h2></li>
+              <li class="hero-category__container">
+                <div class="hero-subcategory__container">
+                  <ul class="hero-subcategories__wrapper">
+                    <li><h2 class="hero-subcategory__title">New Arrivals</h2></li>
+                    <li class="hero-sub__category"><a href="" class="underline-transition">category 1</a></li>
+                  </ul>
+                </div>
+              </li> 
+            </ul>
           </div>
+          <!--* HERO CATEGORIES END -->
+          <!--* HERO SLIDER START -->
+          <div class="swiper mySwiper hero-slider">
+            <div class="swiper-wrapper hero-slider__wrapper">
+            </div>
+            <div class="hero-arrows__container">
+              <button class="heroswiper-button-prev" type="button" aria-label="Previous banner"><i class="ti ti-chevron-left"></i></button>
+              <button class="heroswiper-button-next" type="button" aria-label="Next banner"><i class="ti ti-chevron-right"></i></button>
+            </div>
+          </div>
+          <!--* HERO SLIDER END -->
         </div>
-        <!--* HERO SLIDER END -->
       </div>
     </section>
     <!--* HERO SECTION END HERE -->
