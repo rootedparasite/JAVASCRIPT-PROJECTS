@@ -39,11 +39,8 @@ var product_swiper = new Swiper(".products-sliderone__container", {
     480: {
       slidesPerView: 3,
     },
-    630: {
+    680: {
       slidesPerView: 4,
-    },
-    868: {
-      slidesPerView: 5,
     },
   },
 });
@@ -67,11 +64,8 @@ var product_swiper2 = new Swiper(".products-slidertwo__container", {
     480: {
       slidesPerView: 3,
     },
-    630: {
+    680: {
       slidesPerView: 4,
-    },
-    868: {
-      slidesPerView: 5,
     },
   },
 });
@@ -96,14 +90,8 @@ var product_swiper3 = new Swiper(".products-sliderthree__container", {
     480: {
       slidesPerView: 3,
     },
-    630: {
-      slidesPerView: 4,
-    },
-    868: {
-      slidesPerView: 5,
-    },
     1200: {
-      slidesPerView: 6,
+      slidesPerView: 5,
     },
   },
 });
