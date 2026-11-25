@@ -114,7 +114,7 @@ const recieveRequestForRenderProducts = (renderContainerEl, start, endWith, prod
       renderContainerEl.appendChild(slideContainerEl);
     } else {
       renderContainerEl.appendChild(productCardEl);
-    }
+    } 
   });
 }
 
