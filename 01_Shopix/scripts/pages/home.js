@@ -96,7 +96,7 @@ const recieveRequestForRenderProducts = (renderContainerEl, start, endWith, prod
 
   renderTheseProducts.forEach(currentProd => {
     const productCardEl = document.importNode(productCardTemplateEl.content, true);
-    const { id, title, slug, brand, category, subCategory, price, discountPercentage, discountedPrice, currency, shortDescription, description, rating, reviewCount, sold, stock, availabilityStatus, tags, sku, barcode, weight, dimensions, colors, specifications, warrantyInformation, shippingInformation, returnPolicy, minimumOrderQuantity, images, thumbnail, reviews, meta } = currentProd;
+    const { title, slug, category, price, discountPercentage, discountedPrice, rating, sold, images } = currentProd;
     productCardEl.querySelector(".product-card").setAttribute("id", slug);
     productCardEl.querySelector(".product-card__sale").textContent = `${discountPercentage}% OFF`;
     productCardEl.querySelector(".product-card__image-wrap img").src = images[0];
