@@ -86,13 +86,49 @@ const sendRequestForRenderSubCategories = (categories) => {
       recieveReqForRenderSubCategories(parentCategoryEl, subcategories, name, id);
     }
     categoryContainerEl.appendChild(parentCategoryEl);
-
-
-
   });
-  
-
 }
+
+const recieveRequestForRenderProducts = (renderContainerEl, start, endWith, products, isSlide) => {
+  const renderTheseProducts = products.slice(start , endWith);
+  const productCardTemplateEl = document.querySelector("#product-card__template");
+  if(!productCardTemplateEl) return;
+
+  renderTheseProducts.forEach(currentProd => {
+    const productCardEl = document.importNode(productCardTemplateEl.content, true);
+    const { id, title, slug, brand, category, subCategory, price, discountPercentage, discountedPrice, currency, shortDescription, description, rating, reviewCount, sold, stock, availabilityStatus, tags, sku, barcode, weight, dimensions, colors, specifications, warrantyInformation, shippingInformation, returnPolicy, minimumOrderQuantity, images, thumbnail, reviews, meta } = currentProd;
+    productCardEl.querySelector(".product-card").setAttribute("id", slug);
+    productCardEl.querySelector(".product-card__sale").textContent = `${discountPercentage}% OFF`;
+    productCardEl.querySelector(".product-card__image-wrap img").src = images[0];
+    productCardEl.querySelector(".product-card__image-wrap img").alt = title;
+    productCardEl.querySelector(".product-category").textContent = category;
+    productCardEl.querySelector(".prod-rating").textContent = rating;
+    productCardEl.querySelector(".prod-solds").textContent = sold;
+    productCardEl.querySelector(".product-card__title").textContent = title;
+    productCardEl.querySelector(".product-card__price strong").textContent = price;
+    productCardEl.querySelector(".product-card__price del").textContent = discountedPrice;
+    if(isSlide) {
+      const slideContainerEl = document.createElement("div");
+      slideContainerEl.className = "swiper-slide product-slide";
+      slideContainerEl.appendChild(productCardEl);
+      renderContainerEl.appendChild(slideContainerEl);
+    } else {
+      renderContainerEl.appendChild(productCardEl);
+    }
+  });
+}
+
+const sendRequestForRenderProducts = (products) => {
+  const elements = document.querySelectorAll(".renderProductsContainer");
+  if(!elements.length) return;  
+  elements.forEach(currentContainerEl => {
+    const startCount = parseInt(currentContainerEl.getAttribute("data-startFrom")) || 0;
+    const endsWith = parseInt(currentContainerEl.getAttribute("data-endCount")) || 20;
+    const isSlide = currentContainerEl.getAttribute("data-slideProducts") === "true";
+
+    recieveRequestForRenderProducts(currentContainerEl, startCount, endsWith, products, isSlide);
+  })
+};
 
 
 export const homePageManager = (data) => {
@@ -100,4 +136,5 @@ export const homePageManager = (data) => {
   addIntersecterTransition();
   sendRequestForRenderSubCategories(data[0].categories);
   activeElementOnMouseOver();
+  sendRequestForRenderProducts(data[0].products)
 };

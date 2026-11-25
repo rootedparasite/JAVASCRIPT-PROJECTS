@@ -176,7 +176,6 @@ export const activeElementOnMouseOver = () => {
 
   elements.forEach(targetEl => {
     const selectorEl = document.querySelector(`.${targetEl.getAttribute("data-selector")}`);
-    console.log(selectorEl)
     if(!selectorEl) return;
     targetEl.addEventListener("mouseover", () => selectorEl.classList.add("active"));
     targetEl.addEventListener("mouseout", () => selectorEl.classList.remove("active"));

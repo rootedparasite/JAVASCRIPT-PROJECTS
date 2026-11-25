@@ -340,14 +340,6 @@
           <div class="hero-categories__container">
             <ul class="hero-categories__wrapper hero-categories__parentContainer">
               <li><h2 class="hero-category__title">Top Categories</h2></li>
-              <li class="hero-category__container">
-                <div class="hero-subcategory__container">
-                  <ul class="hero-subcategories__wrapper">
-                    <li><h2 class="hero-subcategory__title">New Arrivals</h2></li>
-                    <li class="hero-sub__category"><a href="" class="underline-transition">category 1</a></li>
-                  </ul>
-                </div>
-              </li> 
             </ul>
           </div>
           <!--* HERO CATEGORIES END -->
@@ -365,6 +357,74 @@
       </div>
     </section>
     <!--* HERO SECTION END HERE -->
+    <!--* PRODUCTS SWIPER WITH AD START -->
+    <section class="product-slider-with-add__container">
+      <div class="product-slider-with-add__wrapper container">
+        <aside class="product-slider__add"><img src="./assets/images/aside/aside-1.jpg" alt=""></aside>
+        <div class="products-slides__container">
+          <div class="products-slides__headingContainer">
+            <div class="products-slides__heading">
+              <span>Shopic Collection</span>
+              <h2>New Arrivals</h2>
+            </div>
+            <div class="products-slides__arrowContainer">
+              <button class="products-slides__arrow products-slides__arrow--prev" type="button" aria-label="Previous products"><i class="ti ti-arrow-left"></i></button>
+              <button class="products-slides__arrow products-slides__arrow--next" type="button" aria-label="Next products"><i class="ti ti-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="swiper mySwiper products-slider__container products-sliderone__container">
+            <div class="swiper-wrapper products-slides__wrapper renderProductsContainer" data-startFrom="0" data-endCount="30" data-slideProducts="true">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--* PRODUCTS SWIPER WITH AD END -->
+    <!--* PRODUCTS SWIPER WITH AD START -->
+    <section class="product-slider-with-add__container">
+      <div class="product-slider-with-add__wrapper container">
+        <div class="products-slides__container">
+          <div class="products-slides__headingContainer">
+            <div class="products-slides__heading">
+              <span>Shopic Collection</span>
+              <h2>Best Sellers</h2>
+            </div>
+            <div class="products-slides__arrowContainer">
+              <button class="products-slides__arrow products-slides__arrow--prev2" type="button" aria-label="Previous products"><i class="ti ti-arrow-left"></i></button>
+              <button class="products-slides__arrow products-slides__arrow--next2" type="button" aria-label="Next products"><i class="ti ti-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="swiper mySwiper products-slider__container products-slidertwo__container">
+            <div class="swiper-wrapper products-slides__wrapper renderProductsContainer" data-startFrom="30" data-endCount="60" data-slideProducts="true">
+            </div>
+          </div>
+        </div>
+        <aside class="product-slider__add"><img src="./assets/images/aside/aside-2.jpg" alt=""></aside>
+      </div>
+    </section>
+    <!--* PRODUCTS SWIPER WITH AD END -->
+    <!--* PRODUCTS SWIPER WITH AD START -->
+    <section class="product-slider-with-add__container">
+      <div class="product-slider-with-add__wrapper container">
+        <div class="products-slides__container product-slider__with--100Width">
+          <div class="products-slides__headingContainer">
+            <div class="products-slides__heading">
+              <span>Shopic Collection</span>
+              <h2>Trending Now</h2>
+            </div>
+            <div class="products-slides__arrowContainer">
+              <button class="products-slides__arrow products-slides__arrow--prev3" type="button" aria-label="Previous products"><i class="ti ti-arrow-left"></i></button>
+              <button class="products-slides__arrow products-slides__arrow--next3" type="button" aria-label="Next products"><i class="ti ti-arrow-right"></i></button>
+            </div>
+          </div>
+          <div class="swiper mySwiper products-slider__container products-sliderthree__container">
+            <div class="swiper-wrapper products-slides__wrapper renderProductsContainer" data-startFrom="60" data-endCount="90" data-slideProducts="true">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--* PRODUCTS SWIPER WITH AD END -->
   </main>
   <!--* MAIN END HERE -->
 
@@ -438,6 +498,37 @@
         <button class="wishlist-add__button" type="button"><i class="ti ti-shopping-cart-plus"></i>Add to Cart</button>
       </div>
     </div>
+  </template>
+  <template id="product-card__template">
+      <article class="product-card">
+        <div class="product-card__visual">
+          <span class="product-card__sale">20% OFF</span>
+          <button class="product-card__wishlist" type="button" aria-label="Add to wishlist"><i class="ti ti-heart"></i></button>
+          <div class="product-card__image-wrap"><img src="https://placehold.co/600x600" alt="Sony Wireless Headphones" class="product-card__image"></div>
+          <div class="product-card__actions">
+            <button type="button" aria-label="Quick view"><i class="ti ti-eye"></i></button>
+            <button type="button" aria-label="Compare"><i class="ti ti-arrows-left-right"></i></button>
+          </div>
+        </div>
+        <div class="product-card__body">
+          <div class="product-card__meta">
+            <span class="product-category">Audio</span>
+            <div class="product-card__rating">
+              <i class="ti ti-star-filled"></i>
+              <strong class="prod-rating">4.8</strong>
+              <small class="prod-solds">(126)</small>
+            </div>
+          </div>
+          <div class="product-card__title">Premium Wireless Noise Cancelling Headphones</div>
+          <div class="product-card__bottom">
+            <div class="product-card__price">
+              <strong>$79.99</strong>
+              <del>$99.99</del>
+            </div>
+            <button class="product-card__cart" type="button" aria-label="Add to cart"><i class="ti ti-shopping-cart-plus"></i></button>
+          </div>
+        </div>
+      </article>
   </template>
   <script type="module" src="./scripts/main.js"></script>
 </body>
