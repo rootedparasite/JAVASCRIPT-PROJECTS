@@ -105,8 +105,8 @@ const recieveRequestForRenderProducts = (renderContainerEl, start, endWith, prod
     productCardEl.querySelector(".prod-rating").textContent = rating;
     productCardEl.querySelector(".prod-solds").textContent = sold;
     productCardEl.querySelector(".product-card__title").textContent = title;
-    productCardEl.querySelector(".product-card__price strong").textContent = price;
-    productCardEl.querySelector(".product-card__price del").textContent = discountedPrice;
+    productCardEl.querySelector(".product-card__price strong").textContent = `Rs. ${price}`;
+    productCardEl.querySelector(".product-card__price del").textContent = `Rs. ${discountedPrice}`;
     if(isSlide) {
       const slideContainerEl = document.createElement("div");
       slideContainerEl.className = "swiper-slide product-slide";
