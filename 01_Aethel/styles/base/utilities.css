@@ -3,3 +3,38 @@
   padding: 0 .5%;
   max-width: 90rem;
 }
+.underline-transition {
+  color: var(--color-white);
+  transition: var(--transition-700ms);
+  position: relative;
+  padding: 0 4px;
+  
+  & i.transition-icon {
+    transition: var(--transition-700ms);
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 2px;
+    width: 100%;
+    background: var(--color-light);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: var(--transition-700ms);
+  }
+
+  &:hover {
+    color: var(--color-light);
+
+    &::after {
+      width: 100%;
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+    & i.transition-icon {
+      transform: translateX(10px) rotate(-5deg);
+    }
+  }
+}

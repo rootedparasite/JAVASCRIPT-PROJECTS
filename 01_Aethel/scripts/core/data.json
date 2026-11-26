@@ -1,0 +1,99 @@
+[
+  {
+    "navbar_links": [
+      {
+        "id": "new-arrivals",
+        "name": "New Arrivals",
+        "haveChilds": true,
+        "cardTopHeading": "Just Dropped",
+        "cardHeading": "Latest Tech & Audio",
+        "cardBottomHeading": "Fresh arrivals across tech, audio, smart home & lifestyle",
+        "cardButtonName": "Shop New In",
+        "childLinks": [
+          { "id": "new-arrivals-tech", "name": "New Tech" },
+          { "id": "new-arrivals-audio", "name": "New Audio" },
+          { "id": "new-arrivals-headphones", "name": "New Headphones" },
+          { "id": "new-arrivals-earbuds", "name": "New Earbuds" },
+          { "id": "new-arrivals-speakers", "name": "New Speakers" },
+          { "id": "new-arrivals-smart-home", "name": "New Smart Home" },
+          { "id": "new-arrivals-wearables", "name": "New Wearables" },
+          { "id": "new-arrivals-accessories", "name": "New Accessories" },
+          { "id": "new-arrivals-lifestyle", "name": "New Lifestyle" }
+        ]
+      },
+      {
+        "id": "tech-audio",
+        "name": "Tech & Audio",
+        "haveChilds": true,
+        "cardTopHeading": "Sound & Tech",
+        "cardHeading": "Tech & Audio Gear",
+        "cardBottomHeading": "Premium audio, gadgets and tech accessories",
+        "cardButtonName": "Shop Tech & Audio",
+        "childLinks": [
+          { "id": "tech-audio-headphones", "name": "Headphones" },
+          { "id": "tech-audio-earbuds", "name": "Earbuds" },
+          { "id": "tech-audio-speakers", "name": "Speakers" },
+          { "id": "tech-audio-soundbars", "name": "Soundbars" },
+          { "id": "tech-audio-microphones", "name": "Microphones" },
+          { "id": "tech-audio-turntables", "name": "Turntables" },
+          { "id": "tech-audio-amplifiers", "name": "Amplifiers" },
+          { "id": "tech-audio-cables", "name": "Cables & Adapters" },
+          { "id": "tech-audio-chargers", "name": "Chargers & Power" },
+          { "id": "tech-audio-gaming", "name": "Gaming Audio" }
+        ]
+      },
+      {
+        "id": "smart-home",
+        "name": "Smart Home",
+        "haveChilds": true,
+        "cardTopHeading": "Smarter Living",
+        "cardHeading": "Smart Home Devices",
+        "cardBottomHeading": "Automate and upgrade your home with smart devices",
+        "cardButtonName": "Shop Smart Home",
+        "childLinks": [
+          { "id": "smart-home-lighting", "name": "Smart Lighting" },
+          { "id": "smart-home-plugs", "name": "Smart Plugs" },
+          { "id": "smart-home-security", "name": "Smart Security" },
+          { "id": "smart-home-cameras", "name": "Smart Cameras" },
+          { "id": "smart-home-doorbells", "name": "Video Doorbells" },
+          { "id": "smart-home-speakers", "name": "Smart Speakers" },
+          { "id": "smart-home-displays", "name": "Smart Displays" },
+          { "id": "smart-home-thermostats", "name": "Thermostats" },
+          { "id": "smart-home-sensors", "name": "Sensors & Detectors" },
+          { "id": "smart-home-hubs", "name": "Smart Hubs" }
+        ]
+      },
+      {
+        "id": "lifestyle",
+        "name": "Lifestyle",
+        "haveChilds": true,
+        "cardTopHeading": "Everyday Tech",
+        "cardHeading": "Lifestyle Essentials",
+        "cardBottomHeading": "Wearables and gadgets made for your daily life",
+        "cardButtonName": "Shop Lifestyle",
+        "childLinks": [
+          { "id": "lifestyle-smart-watches", "name": "Smart Watches" },
+          { "id": "lifestyle-fitness", "name": "Fitness Trackers" },
+          { "id": "lifestyle-wearables", "name": "Wearables" },
+          { "id": "lifestyle-accessories", "name": "Tech Accessories" },
+          { "id": "lifestyle-bags", "name": "Bags & Cases" },
+          { "id": "lifestyle-home-essentials", "name": "Home Essentials" },
+          { "id": "lifestyle-travel", "name": "Travel Gadgets" },
+          { "id": "lifestyle-desk-setup", "name": "Desk Setup" },
+          { "id": "lifestyle-wellness", "name": "Wellness Tech" },
+          { "id": "lifestyle-gifts", "name": "Gift Ideas" }
+        ]
+      },
+      {
+        "id": "best-sellers",
+        "name": "Best Sellers",
+        "haveChilds": false
+      },
+      {
+        "id": "sale",
+        "name": "Sale",
+        "haveChilds": false
+      }
+    ]
+  }
+]

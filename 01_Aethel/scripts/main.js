@@ -1,3 +1,4 @@
+import { headerManager } from "./components/header.js";
 import { toggleBodyScroll } from "./utilities/functions.js";
 
 // * This function hide loading screen and enable body scroll 
@@ -29,5 +30,15 @@ const hideLoadingScreen = () => {
 }
 
 (async() => {
-  hideLoadingScreen();
+  try {
+    const response = await fetch("./scripts/core/data.json");
+    if(!response.ok) throw new Error("Something went wrong with your API File Please Check and try again later");
+
+    const data = await response.json();
+    headerManager(data);
+    hideLoadingScreen();
+
+  } catch(err) {
+    console.error(err)
+  }
 })();
