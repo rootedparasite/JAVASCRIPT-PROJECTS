@@ -57,6 +57,7 @@ body {
   font-family: var(--body-font);
   color: var(--body-text);
   background-color: var(--body-bg);
+  height: 600vh;
 }
 ::selection {
   background-color: #52525B;

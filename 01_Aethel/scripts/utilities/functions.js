@@ -8,10 +8,20 @@ export const activateElementOnMouseover = () => {
 
   elements.forEach(targetEl => {
     const selectorEl = document.querySelector(`.${targetEl.getAttribute("data-selector")}`);
-    console.log(selectorEl)
     if(!selectorEl) return;
 
     targetEl.addEventListener("mouseover", () => selectorEl.classList.add("active"));
     targetEl.addEventListener("mouseout", () => selectorEl.classList.remove("active"));
   })
 }; 
+
+//* This function activate Element on Scroll
+const activateElementOnScroll = () => {
+  const elements = document.querySelectorAll(".activeOnScroll");
+  if(!elements.length) return;
+
+  elements.forEach(selector => {
+    const SCROLL_THRESHOLD = Math.ceil(parseInt(selector.getAttribute("data-scroll"))) || 10;
+    window.addEventListener("scroll", () => window.scrollY >= SCROLL_THRESHOLD ? selector.classList.add("active") : selector.classList.remove("active"));
+  })
+}; activateElementOnScroll();
