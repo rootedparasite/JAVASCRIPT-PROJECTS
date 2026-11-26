@@ -1,0 +1,19 @@
+:root {
+  --color-black: #000;
+  --color-white: #fff;
+  --body-bg: #f0f0f0;
+  --body-text: #010101;
+
+  --body-font: "Inter", sans-serif;
+  --heading-font: "Plus Jakarta Sans", sans-serif;
+
+  --transition-300ms: all 300ms ease;
+  --transition-500ms: all 500ms ease;
+  --transition-700ms: all 700ms ease;
+  --transition-900ms: all 900ms ease;
+  --transition-1200ms: all 1200ms ease;
+  --transition-1500ms: all 1500ms ease;
+  --transition-1800ms: all 1800ms ease;
+  --transition-2000ms: all 2000ms ease;
+  --transition-2200ms: all 2200ms ease;
+}
