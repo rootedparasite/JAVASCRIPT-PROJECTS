@@ -121,7 +121,7 @@
   font-size: 1rem;
   text-transform: uppercase;
   left: 1rem;
-  top: .5rem;
+  top: .75rem;
   color: var(--color-black);
 }
 
@@ -233,3 +233,31 @@
 }
 
 /** Navbar icons  */
+.navbar-icons__container {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  height: 100%;
+
+  & i {
+    color: var(--color-black);
+    font-size: 2rem;
+    transition: var(--transition-300ms);
+  }
+  & p {
+    color: var(--color-black);
+    transition: var(--transition-300ms);
+    font-weight: 700;
+    font-size: .75rem;
+  }
+  & button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: var(--transition-300ms);
+    position: relative;
+    &:hover p, &:hover i {
+      color: var(--color-black-6);
+    }
+  }
+}
