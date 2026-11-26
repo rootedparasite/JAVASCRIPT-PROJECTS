@@ -13,7 +13,7 @@ const renderDropdownFeatureCard = (appendContainerEl, top, center, bottom, btn) 
       <p>${bottom}</p>
     </span>
     <div>
-      <button class="underline-transition">${btn} <i class="ti ti-arrow-narrow-right transition-icon"></i></button>
+      <button>${btn} <i class="ti ti-arrow-narrow-right transition-icon"></i></button>
     </div>
   </div>
   `;
@@ -25,8 +25,6 @@ const renderDropdownFeatureCard = (appendContainerEl, top, center, bottom, btn) 
 const renderNavbarDropdown = (subLinks, parentAppendContainer, cardTopHeading, cardHeading, cardBottomHeading, cardButtonName, dropdownClass, parentName) => {
   const dropdownContainerEl = document.createElement("div");
   dropdownContainerEl.className = `dropdown-categories__container ${dropdownClass}`;
-
-
 
   const dropdownWrapperEl = document.createElement("div");
   dropdownWrapperEl.className = "dropdown-categories__wrapper";
