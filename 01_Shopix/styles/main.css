@@ -11,8 +11,10 @@
 @import url("./components/cart.css");
 @import url("./components/wishlist.css");
 @import url("./components/swiper.css");
+@import url("./components/sidemenu.css");
 
 /* * PAGES */
 @import url("./pages/home.css");
-@import url("./components/sidemenu.css");
+@import url("./pages/product.css");
+@import url("./pages/blog.css");
 

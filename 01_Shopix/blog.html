@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Article | Shopix Journal</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link rel="stylesheet" href="./styles/blog-details.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!--* Header Start -->
+    <header class="main-header activeOnScroll" data-scrollThreshold="100">
+      <!--* Top Header Start -->
+      <div class="top-header activeOnScroll" data-scrollThreshold="100">
+        <div class="container top-header__items">
+          <p>Welcome to Worldwide Shopix Electronics Store</p>
+          <ul class="top-header__links">
+            <li class="top-header__link">
+              <a href="#" class="underline-transition">Become a Seller</a>
+            </li>
+            <li class="top-header__link">
+              <a href="#" class="underline-transition">Blogs</a>
+            </li>
+            <li class="top-header__link">
+              <a href="#" class="underline-transition">Play & Earn</a>
+            </li>
+            <li class="top-header__link">
+              <a href="#" class="underline-transition">Store Locations</a>
+            </li>
+            <li class="top-header__link">
+              <a href="#" class="underline-transition">Apply For a Franchise</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!--* Top Header End -->
+      <!--* Navbar Start -->
+      <nav class="navbar">
+        <div class="container navbar-items__container">
+          <!--* Logo Start -->
+          <a href="#" class="shopix-logo">
+            <div class="shopix-logo-icon">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="shopix-logo-name">
+              <strong>SHOPIX</strong>
+              <small>ELECTRONICS</small>
+            </div>
+          </a>
+          <!--* Logo End -->
+          <!--* Search Container Start -->
+          <div class="search-container">
+            <input
+              type="text"
+              placeholder="I'm Looking For..."
+              id="search-input"
+            />
+            <button class="search-icon__container">
+              <i class="ti ti-search"></i>
+            </button>
+            <!--* Search Result Start -->
+            <div class="search-results__container">
+              <div class="search-results__wrapper">
+                <div class="SR-title__container">
+                  <p>Found Results</p>
+                  <p>[ 0 ]</p>
+                </div>
+                <div class="results-container"></div>
+              </div>
+            </div>
+            <!--* Search Result End -->
+          </div>
+          <!--* Search Container End -->
+          <!--* Header Icons Start -->
+          <div class="navbar-icons__container">
+            <div class="carts-button__container">
+              <button
+                class="activateOnClick addCommonClasses deactivateOnWindowClick"
+                data-selector="cart-container"
+                data-commonClass="pagecart"
+                data-bodyScrollDisabled="true"
+              >
+                <i class="ti ti-shopping-cart"></i
+                ><span class="carts-count cart-count">0</span>
+              </button>
+              <button
+                class="activateOnClick addCommonClasses deactivateOnWindowClick"
+                data-selector="wishlist-container"
+                data-commonClass="pagewishlist"
+                data-bodyScrollDisabled="true"
+              >
+                <i class="ti ti-heart"></i
+                ><span class="carts-count cart-count">0</span>
+              </button>
+            </div>
+            <div class="login-conden__container">
+              <button
+                class="underline-transition activateOnClick user-credential__btn"
+                data-selector="user-credentials__container"
+                data-bodyScrollDisabled="true"
+              >
+                Log in
+              </button>
+              <p>|</p>
+              <button
+                class="underline-transition activateOnClick user-credential__btn signupBtnElem"
+                data-selector="user-credentials__container"
+                data-bodyScrollDisabled="true"
+              >
+                Sign up
+              </button>
+            </div>
+          </div>
+          <!--* Header Icons End -->
+          <button
+            class="open-sidemenu__button addCommonClasses activateOnClick deactivateOnWindowClick"
+            data-bodyScrollDisabled="true"
+            data-commonClass="sidemenu"
+            data-selector="sidemenu-container"
+          >
+            <i class="ti ti-menu-3"></i>
+          </button>
+        </div>
+      </nav>
+      <!--* Navbar End -->
+      <!--* Side Menu Start -->
+      <div class="sidemenu-container">
+        <div class="sidemenu-wrapper">
+          <!--* Sidemenu heading Start -->
+          <header class="sidemenu-heading__container">
+            <div class="shopix-logo">
+              <div class="shopix-logo-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <div class="shopix-logo-name">
+                <strong>SHOPIX</strong>
+                <small>ELECTRONICS</small>
+              </div>
+            </div>
+            <button
+              class="close-menu__btn disableElementsOnClick deactiveElementOnClick"
+              data-selector="sidemenu-container"
+            >
+              <i class="ti ti-x"></i>
+            </button>
+          </header>
+          <!--* Sidemenu heading End -->
+          <!--* Sidemenu Links Container Start -->
+          <div class="sidemenu-links__container">
+            <h3 class="sidemenu-heading">All Categories</h3>
+            <ul class="sidemenu-categories__list"></ul>
+          </div>
+          <!--* Sidemenu Links Container End -->
+          <!--* Sidemenu footer start -->
+          <footer class="sidemenu-footer">
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+          </footer>
+          <!--* Sidemenu footer End -->
+        </div>
+      </div>
+      <!--* Side Menu End -->
+    </header>
+    <!--* Header End -->
+
+  <!-- Reading progress bar -->
+  <div class="reading-progress" aria-hidden="true">
+    <div class="reading-progress__bar" id="progressBar"></div>
+  </div>
+
+  <main>
+    <div class="article-page">
+
+      <!--* BREADCRUMB -->
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol class="breadcrumb__list">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li id="breadcrumbCategory" aria-current="page">Reviews</li>
+          </ol>
+        </nav>
+      </div>
+
+      <!--* ARTICLE HERO -->
+      <section class="article-hero">
+        <div class="container">
+          <div class="article-hero__inner">
+
+            <div class="article-hero__meta-top" id="articleBadges">
+              <!-- JS injects category + read time -->
+            </div>
+
+            <h1 class="article-hero__title" id="articleTitle">Loading...</h1>
+
+            <p class="article-hero__excerpt" id="articleExcerpt"></p>
+
+            <div class="article-hero__meta" id="articleMeta"></div>
+
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="article-hero__cover">
+            <img
+              id="articleCover"
+              src=""
+              alt=""
+              class="article-hero__cover-img">
+          </div>
+        </div>
+      </section>
+
+      <!--* ARTICLE BODY -->
+      <section class="article-body">
+        <div class="container">
+          <article class="article-content">
+
+            <!-- Share (top) -->
+            <div class="article-share article-share--top" id="shareTop"></div>
+
+            <!-- Article prose -->
+            <div class="article-prose" id="articleContent"></div>
+
+            <!-- Tags -->
+            <div class="article-tags" id="articleTags"></div>
+
+            <!-- Share (bottom) -->
+            <div class="article-share article-share--bottom" id="shareBottom"></div>
+
+            <!-- Author box -->
+            <div class="author-box" id="authorBox"></div>
+
+          </article>
+        </div>
+      </section>
+
+      <!--* RELATED POSTS -->
+      <section class="related-posts" id="relatedSection">
+        <div class="container">
+          <div class="related-posts__head">
+            <div>
+              <span class="related-posts__eyebrow">Keep Reading</span>
+              <h2 class="related-posts__title">You Might Also Like</h2>
+            </div>
+            <a href="./blog.html" class="related-posts__link">
+              All Articles <i class="ti ti-arrow-right"></i>
+            </a>
+          </div>
+
+          <div class="related-posts__grid" id="relatedGrid"></div>
+        </div>
+      </section>
+
+      <!--* NEWSLETTER CTA -->
+      <section class="article-newsletter">
+        <div class="container">
+          <div class="article-newsletter__box">
+            <div class="article-newsletter__content">
+              <span class="article-newsletter__eyebrow">Newsletter</span>
+              <h2>Never miss an article</h2>
+              <p>Get the latest reviews, guides, and deals in your inbox every week.</p>
+            </div>
+            <form class="article-newsletter__form">
+              <div class="article-newsletter__input">
+                <i class="ti ti-mail"></i>
+                <input type="email" placeholder="Enter your email" required aria-label="Email address">
+              </div>
+              <button type="submit" class="article-newsletter__btn">
+                Subscribe <i class="ti ti-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!--* BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <i class="ti ti-arrow-up"></i>
+  </button>
+
+  <!--* COPY TOAST -->
+  <div class="toast" id="toast">
+    <i class="ti ti-check"></i>
+    <span id="toastMessage">Link copied to clipboard</span>
+  </div>
+
+    <!--* FOOTER START HERE -->
+    <footer class="footer">
+      <div class="footer__container">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="./index.html" class="footer__logo">
+            <span class="footer__logo-icon">
+              <i class="ti ti-shopping-bag"></i>
+            </span>
+
+            <span>Shopix</span>
+          </a>
+
+          <p class="footer__description">
+            Your one-stop destination for the latest tech, smart gadgets, and
+            everyday electronics at prices you'll love.
+          </p>
+
+          <div class="footer__socials">
+            <a href="#" aria-label="Facebook">
+              <i class="ti ti-brand-facebook"></i>
+            </a>
+
+            <a href="#" aria-label="Instagram">
+              <i class="ti ti-brand-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Twitter">
+              <i class="ti ti-brand-x"></i>
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <i class="ti ti-brand-youtube"></i>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+              <i class="ti ti-brand-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer__column">
+          <h3>Quick Links</h3>
+
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="./shop.html">Shop</a>
+            </li>
+
+            <li>
+              <a href="./about.html">About Us</a>
+            </li>
+
+            <li>
+              <a href="./contact.html">Contact</a>
+            </li>
+
+            <li>
+              <a href="./deals.html">Today's Deals</a>
+            </li>
+
+            <li>
+              <a href="./new-arrivals.html">New Arrivals</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Categories -->
+        <div class="footer__column">
+          <h3>Categories</h3>
+
+          <ul>
+            <li>
+              <a href="#">Smartphones</a>
+            </li>
+
+            <li>
+              <a href="#">Laptops</a>
+            </li>
+
+            <li>
+              <a href="#">Headphones</a>
+            </li>
+
+            <li>
+              <a href="#">Smartwatches</a>
+            </li>
+
+            <li>
+              <a href="#">Gaming</a>
+            </li>
+
+            <li>
+              <a href="#">Accessories</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Customer Service -->
+        <div class="footer__column">
+          <h3>Customer Service</h3>
+
+          <ul>
+            <li>
+              <a href="#">My Account</a>
+            </li>
+
+            <li>
+              <a href="#">Track Order</a>
+            </li>
+
+            <li>
+              <a href="#">Shipping & Delivery</a>
+            </li>
+
+            <li>
+              <a href="#">Returns & Refunds</a>
+            </li>
+
+            <li>
+              <a href="#">FAQs</a>
+            </li>
+
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer__contact">
+          <h3>Get In Touch</h3>
+
+          <a href="tel:+1234567890" class="footer__contact-item">
+            <span>
+              <i class="ti ti-phone"></i>
+            </span>
+
+            <div>
+              <small>Call Us</small>
+              <strong>+1 234 567 890</strong>
+            </div>
+          </a>
+
+          <a href="mailto:support@shopix.com" class="footer__contact-item">
+            <span>
+              <i class="ti ti-mail"></i>
+            </span>
+
+            <div>
+              <small>Email Us</small>
+              <strong>support@shopix.com</strong>
+            </div>
+          </a>
+
+          <div class="footer__contact-item">
+            <span>
+              <i class="ti ti-map-pin"></i>
+            </span>
+
+            <div>
+              <small>Visit Us</small>
+              <strong>123 Tech Street, Digital City</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Features -->
+      <div class="footer__features">
+        <div class="footer__feature">
+          <span>
+            <i class="ti ti-truck"></i>
+          </span>
+
+          <div>
+            <strong>Free Shipping</strong>
+            <small>On orders over $50</small>
+          </div>
+        </div>
+
+        <div class="footer__feature">
+          <span>
+            <i class="ti ti-shield-check"></i>
+          </span>
+
+          <div>
+            <strong>Secure Payment</strong>
+            <small>100% secure checkout</small>
+          </div>
+        </div>
+
+        <div class="footer__feature">
+          <span>
+            <i class="ti ti-refresh"></i>
+          </span>
+
+          <div>
+            <strong>Easy Returns</strong>
+            <small>30 days return policy</small>
+          </div>
+        </div>
+
+        <div class="footer__feature">
+          <span>
+            <i class="ti ti-headset"></i>
+          </span>
+
+          <div>
+            <strong>24/7 Support</strong>
+            <small>We're here to help</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer__bottom">
+        <p>© 2026 <strong>Shopix</strong>. All rights reserved.</p>
+
+        <div class="footer__bottom-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+          <a href="#">Cookies</a>
+        </div>
+
+        <div class="footer__payments">
+          <span>
+            <i class="ti ti-brand-visa"></i>
+          </span>
+
+          <span>
+            <i class="ti ti-brand-mastercard"></i>
+          </span>
+
+          <span>
+            <i class="ti ti-brand-paypal"></i>
+          </span>
+
+          <span>
+            <i class="ti ti-credit-card"></i>
+          </span>
+        </div>
+      </div>
+    </footer>
+
+  <script>
+    /* =============================================
+   SINGLE BLOG PAGE — Shopix
+   ============================================= */
+
+/* ---------- Blog data ---------- */
+const currentBlog = {
+  id: "blog-001",
+  title: "Apple iPhone 16 Review: The Compact Flagship Done Right",
+  slug: "apple-iphone-16-review",
+  excerpt: "Is the iPhone 16 still the best compact flagship in 2026? We spent three weeks with it to find out.",
+  category: "Reviews",
+  tags: ["iphone", "apple", "smartphone", "review", "flagship"],
+  coverImage: "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=1600&q=80",
+  readTime: 8,
+  views: 12450,
+  likes: 842,
+  publishedAt: "2026-11-20T09:00:00Z",
+  author: {
+    name: "Ahmed Raza",
+    role: "Senior Tech Editor",
+    bio: "Ahmed has been reviewing smartphones and consumer electronics for over 8 years. He's obsessed with camera quality, battery life, and finding the honest value in every product.",
+    avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=200&q=80",
+    socials: {
+      twitter: "#",
+      linkedin: "#",
+      instagram: "#"
+    }
+  },
+  content: `
+    <p>The iPhone 16 is a familiar phone done well. Apple hasn't reinvented the wheel here, but the small upgrades — a faster chip, a brighter display, and the new Camera Control button — add up to a genuinely better experience than last year. After three weeks of daily use, here's our full review.</p>
+
+    <div class="key-takeaways">
+      <h3><i class="ti ti-bulb"></i> Key Takeaways</h3>
+      <ul>
+        <li>A18 chip delivers outstanding performance for years to come</li>
+        <li>Brighter OLED display makes outdoor use effortless</li>
+        <li>Camera Control button is genuinely useful, not a gimmick</li>
+        <li>Battery easily lasts a full day of heavy use</li>
+        <li>Charging speed still lags behind Android rivals</li>
+      </ul>
+    </div>
+
+    <h2>Design and Build</h2>
+    <p>At 147.6mm tall and just 170 grams, the iPhone 16 is one of the most comfortable flagship phones to hold in 2026. The aluminum frame is sturdy without feeling heavy, and the matte glass back resists fingerprints well. If you've used an iPhone 15, you'll notice almost no difference — the design language has stabilized, and that's fine.</p>
+    <p>The new Camera Control button sits flush on the right edge. It's pressure-sensitive and gives haptic feedback. A light press opens the camera, a harder press takes a photo, and a slide adjusts zoom or exposure. It sounds gimmicky on paper, but in practice, it's the fastest way to capture a moment I've used on any iPhone.</p>
+
+    <h2>Display</h2>
+    <p>The 6.1-inch OLED panel now hits a peak brightness of 2,000 nits outdoors — a big jump from last year's model. On a bright afternoon, text stays sharp and colors remain accurate. The 60Hz refresh rate is the one spec that feels behind in 2026 — Android rivals at this price point all offer 120Hz. For most users, though, the difference fades after a week of use.</p>
+
+    <blockquote>
+      The iPhone 16 is not a dramatic upgrade — but it's the most balanced compact flagship Apple has ever made.
+    </blockquote>
+
+    <h2>Performance</h2>
+    <p>The A18 chip uses the same 3nm process as the A18 Pro in the Pro models, which means day-to-day performance is basically identical. Apps launch instantly, gaming is smooth, and the phone stays cool even during extended sessions. The 8GB of RAM is enough to keep 15-20 apps in memory without reloading.</p>
+    <p>Apple claims the A18 is up to 30% faster than the A16 in the iPhone 15. In real-world use, the difference is subtle but real — particularly in demanding games and when using AI features like summarization and photo editing.</p>
+
+    <h2>Camera</h2>
+    <p>The 48MP main camera and 12MP ultrawide produce excellent photos in all lighting conditions. Daylight shots are crisp with accurate colors. Low-light shots benefit from Apple's refined computational photography, though they can look slightly over-processed compared to the more natural look of the Pixel 9.</p>
+    <p>The new 2x optical-quality zoom uses a crop from the 48MP sensor, and the results are sharp enough for social media and even printing at small sizes. Video recording remains best-in-class on any phone — the iPhone 16 shoots 4K60 Dolby Vision with excellent stabilization.</p>
+
+    <h2>Battery Life</h2>
+    <p>Battery life is a clear improvement over the iPhone 15. A full day of moderate use (2-3 hours of screen time, some camera use, Bluetooth audio) leaves 30-40% by bedtime. Heavy users pushing 6+ hours of screen time will hit low battery by evening, but that's still a solid result for a compact phone.</p>
+    <p>Charging speed is the weak spot. Wired charging tops out at 20W (about 50% in 30 minutes), and MagSafe wireless is limited to 15W. Android competitors charge to 80% in the same time — it's a gap Apple hasn't closed yet.</p>
+
+    <h2>Software</h2>
+    <p>iOS 18 brings Apple Intelligence — a suite of AI features that include better writing tools, notification summaries, and an upgraded Siri. Most of these work well, though some still feel like works in progress. The good news: Apple has committed to at least 6 years of software updates, which is unmatched in the industry.</p>
+
+    <h2>Verdict</h2>
+    <p>At $799 (or $743.99 with the current Shopix discount), the iPhone 16 is an easy recommendation for anyone upgrading from an iPhone 12 or 13. It's fast, reliable, has an excellent camera, and will receive updates for years. If you have an iPhone 15, the upgrade isn't necessary — but for anyone on an older phone, this is the compact flagship to buy.</p>
+    <p><strong>Rating: 4.7 / 5</strong></p>
+  `
+};
+
+/* ---------- Related posts ---------- */
+const relatedPosts = [
+  {
+    id: "blog-002",
+    title: "Best Budget Laptops Under $700 in 2026",
+    slug: "best-budget-laptops-under-700",
+    excerpt: "You don't need to spend $1,500 for a laptop that just works. Here are our top picks.",
+    category: "Buying Guides",
+    coverImage: "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=80",
+    author: { name: "Sana Khan", avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80" },
+    publishedAt: "2026-11-15T10:00:00Z"
+  },
+  {
+    id: "blog-004",
+    title: "Smartwatch Showdown: Apple Watch vs Galaxy Watch vs Pixel Watch",
+    slug: "smartwatch-showdown-2026",
+    excerpt: "Three ecosystems, three very different smartwatch experiences. Which one is right for you?",
+    category: "Comparisons",
+    coverImage: "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=80",
+    author: { name: "Fatima Iqbal", avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80" },
+    publishedAt: "2026-11-10T08:30:00Z"
+  },
+  {
+    id: "blog-007",
+    title: "Noise Cancelling Headphones: ANC Explained Without the Marketing",
+    slug: "anc-headphones-explained",
+    excerpt: "Not all ANC is equal. Here's how it actually works and what specs to ignore.",
+    category: "Explained",
+    coverImage: "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=80",
+    author: { name: "Hassan Malik", avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&q=80" },
+    publishedAt: "2026-11-02T09:30:00Z"
+  }
+];
+
+/* ---------- Helpers ---------- */
+const formatDate = (iso) =>
+  new Date(iso).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric"
+  });
+
+const formatNumber = (n) =>
+  n >= 1000 ? (n / 1000).toFixed(1).replace(/\.0$/, "") + "K" : n;
+
+const getPageURL = () => window.location.href;
+const getShareText = () => encodeURIComponent(currentBlog.title);
+
+/* ---------- DOM refs ---------- */
+const badgesEl = document.getElementById("articleBadges");
+const titleEl = document.getElementById("articleTitle");
+const excerptEl = document.getElementById("articleExcerpt");
+const metaEl = document.getElementById("articleMeta");
+const coverEl = document.getElementById("articleCover");
+const contentEl = document.getElementById("articleContent");
+const tagsEl = document.getElementById("articleTags");
+const authorBoxEl = document.getElementById("authorBox");
+const relatedGridEl = document.getElementById("relatedGrid");
+const breadcrumbCategoryEl = document.getElementById("breadcrumbCategory");
+const shareTopEl = document.getElementById("shareTop");
+const shareBottomEl = document.getElementById("shareBottom");
+
+/* ---------- Build share buttons ---------- */
+function buildShareButtons() {
+  const url = encodeURIComponent(getPageURL());
+  const text = getShareText();
+
+  const html = `
+    <span class="article-share__label">Share this article</span>
+    <a class="share-btn share-btn--facebook" href="https://www.facebook.com/sharer/sharer.php?u=${url}" target="_blank" rel="noopener" aria-label="Share on Facebook">
+      <i class="ti ti-brand-facebook"></i>
+    </a>
+    <a class="share-btn share-btn--twitter" href="https://twitter.com/intent/tweet?url=${url}&text=${text}" target="_blank" rel="noopener" aria-label="Share on X">
+      <i class="ti ti-brand-x"></i>
+    </a>
+    <a class="share-btn share-btn--whatsapp" href="https://wa.me/?text=${text}%20${url}" target="_blank" rel="noopener" aria-label="Share on WhatsApp">
+      <i class="ti ti-brand-whatsapp"></i>
+    </a>
+    <a class="share-btn share-btn--linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=${url}" target="_blank" rel="noopener" aria-label="Share on LinkedIn">
+      <i class="ti ti-brand-linkedin"></i>
+    </a>
+    <button class="share-btn share-btn--copy" type="button" id="copyBtn" aria-label="Copy link">
+      <i class="ti ti-link"></i>
+    </button>
+  `;
+
+  shareTopEl.innerHTML = html;
+  shareBottomEl.innerHTML = html;
+
+  // Attach copy handler to both
+  document.querySelectorAll("#copyBtn, .share-btn--copy").forEach((btn) => {
+    if (btn.dataset.bound) return;
+    btn.dataset.bound = "true";
+    btn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(getPageURL());
+        showToast("Link copied to clipboard");
+      } catch {
+        showToast("Couldn't copy link");
+      }
+    });
+  });
+}
+
+/* ---------- Render functions ---------- */
+function renderHero() {
+  document.title = `${currentBlog.title} | Shopix Journal`;
+
+  badgesEl.innerHTML = `
+    <span class="article-badge article-badge--category">
+      <i class="ti ti-tag"></i> ${currentBlog.category}
+    </span>
+    <span class="article-badge article-badge--read">
+      <i class="ti ti-clock"></i> ${currentBlog.readTime} min read
+    </span>
+  `;
+
+  titleEl.textContent = currentBlog.title;
+  excerptEl.textContent = currentBlog.excerpt;
+
+  metaEl.innerHTML = `
+    <div class="author-chip">
+      <img src="${currentBlog.author.avatar}" alt="${currentBlog.author.name}">
+      <span>${currentBlog.author.name}</span>
+    </div>
+    <span class="meta-dot"></span>
+    <span class="meta-item"><i class="ti ti-calendar"></i>${formatDate(currentBlog.publishedAt)}</span>
+    <span class="meta-dot"></span>
+    <span class="meta-item"><i class="ti ti-eye"></i>${formatNumber(currentBlog.views)} views</span>
+    <span class="meta-dot"></span>
+    <span class="meta-item"><i class="ti ti-heart"></i>${formatNumber(currentBlog.likes)} likes</span>
+  `;
+
+  coverEl.src = currentBlog.coverImage;
+  coverEl.alt = currentBlog.title;
+  breadcrumbCategoryEl.textContent = currentBlog.category;
+}
+
+function renderContent() {
+  contentEl.innerHTML = currentBlog.content;
+}
+
+function renderTags() {
+  if (!currentBlog.tags || !currentBlog.tags.length) {
+    tagsEl.style.display = "none";
+    return;
+  }
+  tagsEl.innerHTML = currentBlog.tags
+    .map((t) => `<a href="./blog.html?tag=${t}" class="tag-pill">#${t}</a>`)
+    .join("");
+}
+
+function renderAuthor() {
+  const { name, role, bio, avatar, socials } = currentBlog.author;
+  authorBoxEl.innerHTML = `
+    <img class="author-box__avatar" src="${avatar}" alt="${name}">
+    <div class="author-box__content">
+      <span class="author-box__role">Written by</span>
+      <h3 class="author-box__name">${name}</h3>
+      <p class="author-box__bio">${bio}</p>
+      <div class="author-box__socials">
+        ${socials.twitter ? `<a href="${socials.twitter}" aria-label="Twitter"><i class="ti ti-brand-x"></i></a>` : ""}
+        ${socials.linkedin ? `<a href="${socials.linkedin}" aria-label="LinkedIn"><i class="ti ti-brand-linkedin"></i></a>` : ""}
+        ${socials.instagram ? `<a href="${socials.instagram}" aria-label="Instagram"><i class="ti ti-brand-instagram"></i></a>` : ""}
+      </div>
+    </div>
+  `;
+}
+
+function renderRelated() {
+  relatedGridEl.innerHTML = relatedPosts
+    .map(
+      (p) => `
+      <a href="./blog-details.html?slug=${p.slug}" class="rel-card">
+        <div class="rel-card__img-wrap">
+          <span class="rel-card__cat">${p.category}</span>
+          <img src="${p.coverImage}" alt="${p.title}" class="rel-card__img" loading="lazy">
+        </div>
+        <div class="rel-card__body">
+          <h3 class="rel-card__title">${p.title}</h3>
+          <p class="rel-card__excerpt">${p.excerpt}</p>
+          <div class="rel-card__meta">
+            <div class="author-chip">
+              <img src="${p.author.avatar}" alt="${p.author.name}">
+              <span>${p.author.name}</span>
+            </div>
+            <span class="meta-dot"></span>
+            <span class="meta-item">
+              <i class="ti ti-calendar"></i>${formatDate(p.publishedAt)}
+            </span>
+          </div>
+        </div>
+      </a>
+    `
+    )
+    .join("");
+}
+
+/* ---------- Reading progress ---------- */
+function initProgressBar() {
+  const bar = document.getElementById("progressBar");
+  const article = document.querySelector(".article-page");
+
+  function update() {
+    const rect = article.getBoundingClientRect();
+    const total = article.offsetHeight - window.innerHeight;
+    const scrolled = -rect.top;
+    const progress = Math.max(0, Math.min(100, (scrolled / total) * 100));
+    bar.style.width = progress + "%";
+  }
+
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  update();
+}
+
+/* ---------- Back to top ---------- */
+function initBackToTop() {
+  const btn = document.getElementById("backToTop");
+  window.addEventListener(
+    "scroll",
+    () => {
+      btn.classList.toggle("is-visible", window.scrollY > 400);
+    },
+    { passive: true }
+  );
+  btn.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+/* ---------- Toast ---------- */
+let toastTimeout;
+function showToast(msg) {
+  const toast = document.getElementById("toast");
+  const msgEl = document.getElementById("toastMessage");
+  msgEl.textContent = msg;
+  toast.classList.add("is-visible");
+
+  clearTimeout(toastTimeout);
+  toastTimeout = setTimeout(() => {
+    toast.classList.remove("is-visible");
+  }, 2400);
+}
+
+/* ---------- Init ---------- */
+function init() {
+  renderHero();
+  renderContent();
+  renderTags();
+  renderAuthor();
+  renderRelated();
+  buildShareButtons();
+  initProgressBar();
+  initBackToTop();
+}
+
+init();
+  </script>
+</body>
+</html>
