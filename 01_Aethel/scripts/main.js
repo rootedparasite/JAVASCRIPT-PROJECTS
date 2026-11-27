@@ -39,6 +39,6 @@ const hideLoadingScreen = () => {
     hideLoadingScreen();
 
   } catch(err) {
-    console.error(err)
+    console.error(err); 
   }
 })();

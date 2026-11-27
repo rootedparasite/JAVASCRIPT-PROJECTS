@@ -25,3 +25,16 @@ const activateElementOnScroll = () => {
     window.addEventListener("scroll", () => window.scrollY >= SCROLL_THRESHOLD ? selector.classList.add("active") : selector.classList.remove("active"));
   })
 }; activateElementOnScroll();
+
+//* This function activate Element On Click 
+const activeElementOnClick = () => {
+  const elements = document.querySelectorAll(".activateOnClick");
+  if(!elements.length) return;
+
+  elements.forEach(targetEl => {
+    const selectorEl = document.querySelector(`.${targetEl.getAttribute("data-active")}`);
+    if(!selectorEl) return;
+
+    targetEl.addEventListener("click", () => selectorEl.classList.add("active"));
+  })
+};

@@ -1,4 +1,5 @@
 import { activateElementOnMouseover } from "../utilities/functions.js";
+import { mobileMenuManager } from "./mobileMenu.js";
 
 // This function creates and appends a feature card inside the navbar dropdown.
 const renderDropdownFeatureCard = (appendContainerEl, top, center, bottom, btn) => {
@@ -39,7 +40,7 @@ const renderNavbarDropdown = (subLinks, parentAppendContainer, cardTopHeading, c
   dropdownWrapperEl.appendChild(categoriesWrapperEl);
 
   subLinks.forEach(currentLink => {
-    const {id, name} = currentLink;
+    const {id, name} = currentLink                                                                                                                                                                                                                                            ;
     const listItemEl = document.createElement("li");
     listItemEl.id = id;
     
@@ -98,4 +99,5 @@ const renderNavbarLinks = (navlinks) => {
 export const headerManager = (data) => {
   renderNavbarLinks(data[0].navbar_links);
   activateElementOnMouseover();
+  mobileMenuManager(data[0].navbar_links);
 };
