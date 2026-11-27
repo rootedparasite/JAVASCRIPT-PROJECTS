@@ -2,41 +2,45 @@ const toggleMobileMenu = () => {
   const menuButtonEl = document.querySelector("#open-sidemenu__btn");
   const buttonIconEl = menuButtonEl.querySelector("i");
   const menuEl = document.querySelector(".menu-container");
-  if(!menuButtonEl || !menuEl || !buttonIconEl) return;
-  
+  if (!menuButtonEl || !menuEl || !buttonIconEl) return;
+
   menuButtonEl.addEventListener("click", () => {
-    if(!menuEl.classList.contains("active")) {
+    if (!menuEl.classList.contains("active")) {
       buttonIconEl.className = "ti ti-x";
       menuEl.classList.add("active");
     } else {
       buttonIconEl.className = "ti ti-menu-3";
       menuEl.classList.remove("active");
     }
-  })
+  });
 };
 
 const closePreviousAllMenu = (elements) => {
-  elements.forEach(targetEl => {
-    const selectorEl = document.querySelector(`.${targetEl.getAttribute("data-selector")}`);
-    if(!selectorEl) return;
+  elements.forEach((targetEl) => {
+    const selectorEl = document.querySelector(
+      `.${targetEl.getAttribute("data-selector")}`,
+    );
+    if (!selectorEl) return;
     selectorEl.classList.remove("active");
-  })
-}
+  });
+};
 
 const activeDropdownMenu = () => {
   const elements = document.querySelectorAll(".dropdownActivator");
-  if(!elements.length) return;
+  if (!elements.length) return;
 
-  elements.forEach(targetEl => {
-    const selectorEl = document.querySelector(`.${targetEl.getAttribute("data-selector")}`);
-    if(!selectorEl) return
+  elements.forEach((targetEl) => {
+    const selectorEl = document.querySelector(
+      `.${targetEl.getAttribute("data-selector")}`,
+    );
+    if (!selectorEl) return;
     targetEl.addEventListener("click", () => {
-      if(selectorEl.classList.contains("active")) {
+      if (selectorEl.classList.contains("active")) {
         selectorEl.classList.remove("active");
       } else {
         closePreviousAllMenu(elements);
         selectorEl.classList.add("active");
-      }               
+      }
     });
   });
 };
@@ -50,28 +54,28 @@ const renderdropdownMenuLinks = (data, appendContainerEl) => {
 
   let count = 20;
 
-  data.forEach(currentLink => {
-    const {id, name} = currentLink;
+  data.forEach((currentLink) => {
+    const { id, name } = currentLink;
     const anchorTagEl = document.createElement("a");
     anchorTagEl.href = "./category.html";
     anchorTagEl.textContent = name;
     anchorTagEl.setAttribute("id", `${id}menu`);
-    anchorTagEl.style.animationDelay = `${count += 20}ms`;
+    anchorTagEl.style.animationDelay = `${(count += 20)}ms`;
 
     dropdownWrapperEl.appendChild(anchorTagEl);
   });
 
   dropdownContainerEl.appendChild(dropdownWrapperEl);
   appendContainerEl.appendChild(dropdownContainerEl);
-}
+};
 
 const renderMobileMenuLink = (data) => {
-  const linkContainerEl = document.querySelector(".menu-categories")
-  if(!linkContainerEl) return;
+  const linkContainerEl = document.querySelector(".menu-categories");
+  if (!linkContainerEl) return;
 
-  data.forEach(currentLink => {
-    const {id, name, haveChilds, childLinks} = currentLink;
-    
+  data.forEach((currentLink) => {
+    const { id, name, haveChilds, childLinks } = currentLink;
+
     const parentListItemEl = document.createElement("li");
     parentListItemEl.className = `menu-category ${id}menu`;
     parentListItemEl.setAttribute("id", id);
@@ -88,20 +92,20 @@ const renderMobileMenuLink = (data) => {
 
     parentListItemEl.appendChild(parentLinkBtnEl);
 
-    if(haveChilds) {
+    if (haveChilds) {
       iconEl.className = "ti ti-chevron-down";
       renderdropdownMenuLinks(childLinks, parentListItemEl);
-      parentLinkBtnEl.classList.add("dropdownActivator")
+      parentLinkBtnEl.classList.add("dropdownActivator");
     } else {
       iconEl.className = "ti ti-arrow-up-right";
     }
     parentLinkBtnEl.appendChild(iconEl);
     linkContainerEl.appendChild(parentListItemEl);
   });
-}
+};
 
 export const mobileMenuManager = (data) => {
   renderMobileMenuLink(data);
   activeDropdownMenu();
   toggleMobileMenu();
-} 
+};
