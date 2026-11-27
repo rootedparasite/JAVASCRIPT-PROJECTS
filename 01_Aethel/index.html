@@ -146,7 +146,7 @@
               <i class="ti ti-search"></i>
               <p class="name">Search</p>
             </button>
-            <button>
+            <button class="account-btn">
               <i class="ti ti-user-circle"></i>
               <p class="name">Account</p>
             </button>
@@ -161,16 +161,165 @@
             </button>
           </div>
         </div>
+        <!--* SIDEMENU START HERE -->
+<div class="menu-container active">
+  <div class="menu-wrapper">
+
+    <!-- QUICK ACTIONS (top, fixed) -->
+    <div class="menu-actions">
+      <a href="/account" class="menu-action">
+        <div class="menu-action__icon">
+          <i class="ti ti-user"></i>
+        </div>
+        <div class="menu-action__text">
+          <span class="menu-action__label">My Account</span>
+          <span class="menu-action__sub">Sign in / Register</span>
+        </div>
+      </a>
+
+      <a href="/wishlist" class="menu-action">
+        <div class="menu-action__icon">
+          <i class="ti ti-heart"></i>
+          <span class="menu-action__badge">3</span>
+        </div>
+        <div class="menu-action__text">
+          <span class="menu-action__label">Wishlist</span>
+          <span class="menu-action__sub">3 saved items</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- HEADING (fixed) -->
+    <div class="menu-header">
+      <h2 class="menu-heading">
+        <span class="menu-heading__dot"></span>
+        All Categories
+      </h2>
+    </div>
+
+    <!-- SCROLLABLE CATEGORIES -->
+    <div class="menu-scroll">
+      <ul class="menu-categories">
+
+        <!-- NEW ARRIVALS -->
+        <li class="menu-category">
+          <button class="menu-category__trigger" aria-expanded="false">
+            <span>New Arrivals</span>
+            <i class="ti ti-chevron-down"></i>
+          </button>
+          <div class="menu-subcategories">
+            <div class="menu-subcategories-inner">
+              <a href="/new-arrivals-tech">New Tech</a>
+              <a href="/new-arrivals-audio">New Audio</a>
+              <a href="/new-arrivals-headphones">New Headphones</a>
+              <a href="/new-arrivals-earbuds">New Earbuds</a>
+              <a href="/new-arrivals-speakers">New Speakers</a>
+              <a href="/new-arrivals-smart-home">New Smart Home</a>
+              <a href="/new-arrivals-wearables">New Wearables</a>
+              <a href="/new-arrivals-accessories">New Accessories</a>
+              <a href="/new-arrivals-lifestyle">New Lifestyle</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- TECH & AUDIO -->
+        <li class="menu-category">
+          <button class="menu-category__trigger" aria-expanded="false">
+            <span>Tech &amp; Audio</span>
+            <i class="ti ti-chevron-down"></i>
+          </button>
+          <div class="menu-subcategories">
+            <div class="menu-subcategories-inner">
+              <a href="/tech-audio-headphones">Headphones</a>
+              <a href="/tech-audio-earbuds">Earbuds</a>
+              <a href="/tech-audio-speakers">Speakers</a>
+              <a href="/tech-audio-soundbars">Soundbars</a>
+              <a href="/tech-audio-microphones">Microphones</a>
+              <a href="/tech-audio-turntables">Turntables</a>
+              <a href="/tech-audio-amplifiers">Amplifiers</a>
+              <a href="/tech-audio-cables">Cables &amp; Adapters</a>
+              <a href="/tech-audio-chargers">Chargers &amp; Power</a>
+              <a href="/tech-audio-gaming">Gaming Audio</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- SMART HOME -->
+        <li class="menu-category">
+          <button class="menu-category__trigger" aria-expanded="false">
+            <span>Smart Home</span>
+            <i class="ti ti-chevron-down"></i>
+          </button>
+          <div class="menu-subcategories">
+            <div class="menu-subcategories-inner">
+              <a href="/smart-home-lighting">Smart Lighting</a>
+              <a href="/smart-home-plugs">Smart Plugs</a>
+              <a href="/smart-home-security">Smart Security</a>
+              <a href="/smart-home-cameras">Smart Cameras</a>
+              <a href="/smart-home-doorbells">Video Doorbells</a>
+              <a href="/smart-home-speakers">Smart Speakers</a>
+              <a href="/smart-home-displays">Smart Displays</a>
+              <a href="/smart-home-thermostats">Thermostats</a>
+              <a href="/smart-home-sensors">Sensors &amp; Detectors</a>
+              <a href="/smart-home-hubs">Smart Hubs</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- LIFESTYLE -->
+        <li class="menu-category">
+          <button class="menu-category__trigger" aria-expanded="false">
+            <span>Lifestyle</span>
+            <i class="ti ti-chevron-down"></i>
+          </button>
+          <div class="menu-subcategories">
+            <div class="menu-subcategories-inner">
+              <a href="/lifestyle-smart-watches">Smart Watches</a>
+              <a href="/lifestyle-fitness">Fitness Trackers</a>
+              <a href="/lifestyle-wearables">Wearables</a>
+              <a href="/lifestyle-accessories">Tech Accessories</a>
+              <a href="/lifestyle-bags">Bags &amp; Cases</a>
+              <a href="/lifestyle-home-essentials">Home Essentials</a>
+              <a href="/lifestyle-travel">Travel Gadgets</a>
+              <a href="/lifestyle-desk-setup">Desk Setup</a>
+              <a href="/lifestyle-wellness">Wellness Tech</a>
+              <a href="/lifestyle-gifts">Gift Ideas</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- BEST SELLERS (direct) -->
+        <li class="menu-category">
+          <a href="/best-sellers" class="menu-category__link">
+            <span>Best Sellers</span>
+            <i class="ti ti-arrow-up-right"></i>
+          </a>
+        </li>
+
+        <!-- SALE (direct) -->
+        <li class="menu-category">
+          <a href="/sale" class="menu-category__link">
+            <span>Sale</span>
+            <i class="ti ti-arrow-up-right"></i>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</div>
+<!--* SIDEMENU END HERE -->
       </nav>
       <!--* NAVBAR END HERE -->
     </header>
     <!--* HEADING END HERE -->
     <!--* CART START HERE -->
-    <div class="cart-container">
+    <!-- <div class="cart-container">
       <div class="cart-wrapper">
 
       </div>
-    </div>
+    </div> -->
     <!--* CART END HERE -->
     <script type="module" src="./scripts/main.js"></script>
   </body>

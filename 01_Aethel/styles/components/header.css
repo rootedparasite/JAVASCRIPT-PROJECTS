@@ -3,7 +3,7 @@
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 100;
+  z-index: 10;
   left: 0;
 
 }
@@ -15,6 +15,7 @@
 
   &.active {
     height: 0;
+    box-shadow: var(--box-shadow-light);
   }
 }
 .top-header__wrapper {
@@ -50,6 +51,7 @@
   height: 5rem;
   background: var(--color-white);
   border-bottom: 2px solid var(--color-light);
+  position: relative;
 }
 .navbar-wrapper {
   height: 100%;
@@ -468,6 +470,7 @@
 @media screen and (width <= 768px) {
   .navbar-links__wrapper,
   button.wishlist-button { display: none; }
+  button.account-btn { display: none; }
   #open-sidemenu__btn {
     display: block;
   }
@@ -483,11 +486,12 @@
   .navbar-icons__container {
     padding: 0 1rem 0 0;
     gap: 1rem;
+
     & i {
-      font-size: 2rem;
+      font-size: 2.3rem;
     }
     & p {
-      font-size: 0.85rem;
+      display: none;
     }
   }
 }
@@ -497,10 +501,7 @@
   .navbar-icons__container {
     gap: .65rem;
     & i {
-      font-size: 1.8rem;
-    }
-    & p {
-      font-size: 0.8rem;
+      font-size: 2.3rem;
     }
   }
 }
