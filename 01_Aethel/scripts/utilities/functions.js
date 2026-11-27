@@ -14,17 +14,11 @@ export const activateElementOnMouseover = () => {
   if (!elements.length) return;
 
   elements.forEach((targetEl) => {
-    const selectorEl = document.querySelector(
-      `.${targetEl.getAttribute("data-selector")}`,
-    );
+    const selectorEl = document.querySelector(`.${targetEl.getAttribute("data-selector")}`);
     if (!selectorEl) return;
 
-    targetEl.addEventListener("mouseover", () =>
-      selectorEl.classList.add("active"),
-    );
-    targetEl.addEventListener("mouseout", () =>
-      selectorEl.classList.remove("active"),
-    );
+    targetEl.addEventListener("mouseover", () => selectorEl.classList.add("active"));
+    targetEl.addEventListener("mouseout", () => selectorEl.classList.remove("active"));
   });
 };
 
@@ -44,20 +38,3 @@ const activateElementOnScroll = () => {
   });
 };
 activateElementOnScroll();
-
-//* This function activate Element On Click
-const activeElementOnClick = () => {
-  const elements = document.querySelectorAll(".activateOnClick");
-  if (!elements.length) return;
-
-  elements.forEach((targetEl) => {
-    const selectorEl = document.querySelector(
-      `.${targetEl.getAttribute("data-active")}`,
-    );
-    if (!selectorEl) return;
-
-    targetEl.addEventListener("click", () =>
-      selectorEl.classList.add("active"),
-    );
-  });
-};
