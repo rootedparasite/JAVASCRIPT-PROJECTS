@@ -482,6 +482,7 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition: letter-spacing 500ms ease;
   }
   .navbar-icons__container {
     padding: 0 1rem 0 0;
